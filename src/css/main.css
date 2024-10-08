@@ -113,13 +113,13 @@ button:hover {
 @media (min-width: 992px) {
   .container {
     max-width: 992px;
-    outline: 1px solid blue;
+    outline: 1px solid orange;
   }
 }
 @media (min-width: 1330px) {
   .container {
     max-width: 1330px;
-    outline: 1px solid orange;
+    outline: 1px solid blue;
   }
 }
 
@@ -129,12 +129,12 @@ button:hover {
 }
 
 .hero {
-  height: 150px;
-  background-color: #ffefa6;
+  background-color: #afffd3;
 }
 
 .section-2 {
-  background-color: #afffd3;
+  height: 150px;
+  background-color: #ffefa6;
 }
 
 .footer {

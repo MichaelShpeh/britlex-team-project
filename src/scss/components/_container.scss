@@ -26,12 +26,12 @@
 		// max-width: 992px;
 		max-width: getBreakPoint('xl');
 		// ! міксін outline
-		@include outline($color: blue);
+		@include outline($color: orange);
 	}
 	@media (min-width: getBreakPoint('xxl')) {
 		// max-width: 1330px;
 		max-width: getBreakPoint('xxl');
 		// ! міксін outline
-		@include outline($color: orange);
+		@include outline($color: blue);
 	}
 }
