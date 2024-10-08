@@ -15,7 +15,7 @@
 		@media screen and (min-width: 992px) {
 			@content;
 		}
-	} @else if $breakpoint == '2xl' {
+	} @else if $breakpoint == 'xxl' {
 		@media screen and (min-width: 1330px) {
 			@content;
 		}
@@ -40,4 +40,15 @@
 
 @mixin transition($property) {
 	transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+//! ----------- 01.Міксін outline -----------
+//todo var.1 
+// @mixin outline($size: 1px, $type: solid, $color) {
+//     outline: $size $type $color;
+// }
+
+//todo var.2 
+@mixin outline($size: 1px, $type: solid, $color: tomato) {
+    outline: $size $type $color;
 }
