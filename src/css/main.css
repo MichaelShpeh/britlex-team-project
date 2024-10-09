@@ -87,6 +87,10 @@ button:hover {
   cursor: pointer;
 }
 
+body {
+  font-family: "Poppins";
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -125,17 +129,11 @@ button:hover {
 
 .header {
   height: 100px;
-  background-color: #ffd3d3;
+  background-color: #ffc1e1;
 }
 
 .hero {
   background-color: #afffd3;
-}
-
-.section-2 {
-  height: 150px;
-  background-color: #ffefa6;
-  border: 1px solid red;
 }
 
 .footer {
