@@ -1,3 +1,4 @@
+// utils/reset
 @import './base/reset';
 @import './utils/fonts';
 @import './utils/variables';
@@ -5,8 +6,13 @@
 @import './utils/function';
 @import './utils/mixins';
 
+// base
+@import './base/common';
+
+// components
 @import './components/container';
 
+// layouts
 @import './layout/header';
 @import './layout/hero';
 @import './layout/skils';
