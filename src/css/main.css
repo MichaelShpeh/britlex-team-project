@@ -79,36 +79,30 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
 @media (min-width: 320px) {
   .container {
     max-width: 320px;
-    outline: 1px solid teal;
   }
 }
 @media (min-width: 575px) {
   .container {
     max-width: 575px;
-    outline: 1px solid violet;
   }
 }
 @media (min-width: 767px) {
   .container {
     max-width: 767px;
-    outline: 1px solid green;
   }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 992px;
-    outline: 1px solid orange;
   }
 }
 @media (min-width: 1330px) {
   .container {
     max-width: 1330px;
-    outline: 1px solid blue;
   }
 }
 
@@ -334,6 +328,36 @@ body {
 }
 
 .footer {
-  height: 50px;
-  background-color: #afc2ff;
+  padding-bottom: 46px;
+}
+
+.footer-div {
+  border-top: 1px solid #c4c4c4;
+  padding-top: 26px;
+}
+
+.title-footer {
+  font-weight: 400;
+  font-size: 24px;
+  color: #939393;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.brit-footer {
+  color: black;
+}
+
+.text-footer {
+  font-weight: 500;
+  font-size: 11px;
+  color: #8f95a5;
+  text-align: center;
+}
+
+@media (min-width: 575px) {
+  .footer-div {
+    display: flex;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=main.css.map */
