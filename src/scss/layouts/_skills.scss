@@ -1,14 +1,35 @@
 .skills {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	padding: 0 15px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 
 	@include media(md) {
-		padding: 0 32px;
+		margin-top: 96px;
+		margin-bottom: 84px;
+	}
+
+	@include media(lg) {
+		margin-top: 56px;
+		margin-bottom: 52px;
 	}
 
 	@include media(xl) {
-		padding: 0 26px;
+		margin-top: 72px;
+		margin-bottom: 106px;
+	}
+
+	@include media(xxl) {
+		margin-top: 147px;
+		margin-bottom: 252px;
+	}
+
+	> div {
+		@include media(md) {
+			padding: 0 32px;
+		}
+
+		@include media(xl) {
+			padding: 0 26px;
+		}
 	}
 
 	&__title {
@@ -17,6 +38,25 @@
 		text-align: center;
 		margin-bottom: 32px;
 		font-weight: 600;
+
+		@include media(md) {
+			font-size: 30px;
+			margin-bottom: 34px;
+		}
+
+		@include media(lg) {
+			margin-bottom: 36px;
+		}
+
+		@include media(xl) {
+			font-size: 36px;
+			margin-bottom: 53px;
+		}
+
+		@include media(xxl) {
+			font-size: 48px;
+			margin-bottom: 96px;
+		}
 	}
 
 	&__list {
@@ -28,7 +68,7 @@
 
 		@include media(md) {
 			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(2, 0fr);
+			grid-template-rows: repeat(2, 1fr);
 			grid-column-gap: 30px;
 			grid-row-gap: 30px;
 		}
@@ -39,6 +79,22 @@
 			grid-template-rows: repeat(2, 0fr);
 			grid-column-gap: 10px;
 			grid-row-gap: 10px;
+		}
+
+		@include media(xl) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 0fr);
+			grid-column-gap: 13px;
+			grid-row-gap: 13px;
+		}
+
+		@include media(xxl) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 0fr);
+			grid-column-gap: 20px;
+			grid-row-gap: 20px;
 		}
 	}
 
@@ -58,6 +114,7 @@
 
 		@include media(lg) {
 			height: auto;
+			justify-content: start;
 		}
 
 		&__first {
@@ -66,6 +123,14 @@
 
 				padding: 0;
 				height: 662px;
+			}
+
+			@include media(xl) {
+				height: 696px;
+			}
+
+			@include media(xxl) {
+				height: 894px;
 			}
 		}
 
@@ -79,6 +144,14 @@
 						margin-top: 0;
 					}
 				}
+			}
+
+			@include media(xl) {
+				height: 441px;
+			}
+
+			@include media(xxl) {
+				height: 531px;
 			}
 		}
 
@@ -94,6 +167,21 @@
 					}
 				}
 			}
+
+			@include media(xl) {
+				height: 441px;
+			}
+
+			@include media(xxl) {
+				height: 531px;
+				padding-top: 0;
+
+				> div {
+					> h3 {
+						margin-top: 46px;
+					}
+				}
+			}
 		}
 
 		&__fourth {
@@ -102,6 +190,14 @@
 				padding: 0 0 26px 22px;
 				flex-direction: row;
 				height: 210px;
+			}
+
+			@include media(xl) {
+				height: 241px;
+			}
+
+			@include media(xxl) {
+				height: 343px;
 			}
 		}
 
@@ -114,6 +210,10 @@
 
 			@include media(lg) {
 				font-size: 20px;
+			}
+
+			@include media(xxl) {
+				font-size: 30px;
 			}
 		}
 
@@ -132,6 +232,11 @@
 			@include media(lg) {
 				margin-bottom: 13px;
 				max-width: 182px;
+			}
+
+			@include media(xxl) {
+				font-size: 16px;
+				line-height: 24px;
 			}
 
 			&__first {
@@ -155,16 +260,49 @@
 				@include media(lg) {
 					font-size: 13px;
 					line-height: 19.5px;
-					> span:first-child {
-						max-width: 196px;
-					}
+					max-width: 200px;
+				}
+
+				@include media(xl) {
+					max-width: 250px;
+					margin-bottom: 30px;
+				}
+
+				@include media(xxl) {
+					font-size: 16px;
+					line-height: 24px;
+					max-width: 335px;
+				}
+			}
+
+			&__second {
+				@include media(lg) {
+					max-width: 200px;
+				}
+
+				@include media(xl) {
+					max-width: 250px;
+				}
+
+				@include media(xxl) {
+					max-width: 340px;
 				}
 			}
 
 			&__third {
 				@include media(lg) {
-					max-width: 170px;
-					font-size: 12px;
+					max-width: 200px;
+					font-size: 13px;
+				}
+
+				@include media(xl) {
+					max-width: 250px;
+				}
+
+				@include media(xxl) {
+					max-width: 340px;
+					font-size: 15px;
+					line-height: 24px;
 				}
 			}
 
@@ -176,6 +314,10 @@
 				@include media(lg) {
 					margin-bottom: 13px;
 					max-width: 250px;
+				}
+
+				@include media(xxl) {
+					max-width: 335px;
 				}
 			}
 		}
@@ -211,6 +353,17 @@
 				line-height: 24px;
 				font-size: 16px;
 				font-weight: 500;
+			}
+
+			@include media(xl) {
+				font-size: 18px;
+				line-height: 27px;
+			}
+
+			@include media(xxl) {
+				font-size: 20px;
+				line-height: 30px;
+				margin-top: 0px;
 			}
 		}
 	}
