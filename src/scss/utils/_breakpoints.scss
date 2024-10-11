@@ -15,9 +15,3 @@ $break-points: (
 	xl: 992px,
 	xxl: 1330px
 );
-
-//? ======== var-03.map-get --> getBreakPoint ========
-// * ================= break-points ===================
-@function getBreakPoint($key) {
-	@return map-get($break-points, $key);
-}
