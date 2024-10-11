@@ -5,3 +5,7 @@
 @function getFont($name) {
 	@return map-get($fonts, $name);
 }
+
+@function getBreakPoint($key) {
+	@return map-get($break-points, $key);
+}
