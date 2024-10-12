@@ -1,4 +1,31 @@
 .header {
-    height: 100px;
-    background-color: #ffc1e1;
+   padding-top: 36px;
+   padding-bottom: 29px;
+
+   .header-nav{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 14px;
+
+    .header-nav-list{
+        display: none;
+    }
+    .header-nav__input{
+        display: none;
+    }
+    .header-nav__button{
+        display: none;
+    }
+    .header-nav__label{
+        margin-left: 175px;
+    }
+    .header-nav__title{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .header-nav__span{
+        color:map-get($colors, text)
+    }
+   }
 }
