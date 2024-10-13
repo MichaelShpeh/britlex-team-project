@@ -664,6 +664,150 @@ body {
   }
 }
 
+.about {
+  padding-bottom: 84px;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 333%;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.about-image {
+  margin-bottom: 27px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #8f95a5;
+  margin-bottom: 10px;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-number {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 333%;
+  color: #263238;
+}
+
+.about-description {
+  font-weight: 400;
+  font-size: 15px;
+  color: #8f95a5;
+}
+
+@media screen and (min-width: 575px) {
+  .about {
+    padding-bottom: 130px;
+  }
+  .about-title {
+    font-size: 30px;
+    line-height: 267%;
+  }
+  .about-text {
+    font-size: 14px;
+  }
+  .about-list {
+    width: 425px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 767px) {
+  .about {
+    padding-bottom: 88px;
+  }
+  .about-div {
+    align-items: normal;
+    position: relative;
+  }
+  .about-text {
+    text-align: left;
+    max-width: 320px;
+  }
+  .about-image {
+    position: absolute;
+    top: 36px;
+    right: 35px;
+  }
+  .about-list {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about {
+    padding-bottom: 100px;
+  }
+  .about-title {
+    font-size: 36px;
+    line-height: 222%;
+  }
+  .about-text {
+    font-size: 16px;
+    max-width: 530px;
+  }
+  .about-list {
+    width: 400px;
+  }
+  .about-number {
+    font-size: 30px;
+    line-height: 267%;
+  }
+  .about-description {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .about {
+    padding-bottom: 188px;
+  }
+  .about-title {
+    font-size: 48px;
+    line-height: 167%;
+    margin-bottom: 23px;
+  }
+  .about-text {
+    font-size: 20px;
+    margin-bottom: 42px;
+  }
+  .about-image {
+    top: 0;
+  }
+  .about-list {
+    width: 600px;
+  }
+  .about-number {
+    font-size: 48px;
+    line-height: 167%;
+  }
+  .about-description {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
 .pricing {
   padding-top: 42px;
 }
