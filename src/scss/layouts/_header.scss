@@ -59,6 +59,7 @@
     }
     .header-nav__button{
         display: none;
+        transition: background-color 0.3s ease;
         @media screen and (min-width: getBreakPoint(xl)){
          display: block;
          border: 2px solid map-get($colors, primary);
@@ -75,6 +76,10 @@
             padding: 8px 50px;
             margin-left: 240px;
         }
+    }
+    .header-nav__button:hover{
+        background-color:map-get($colors, text);
+        color:map-get($colors, white)
     }
     .header-nav__label{
         margin-left: 175px;
