@@ -2,14 +2,8 @@
     padding-bottom: 84px;
 }
 .about-div{
-<<<<<<< Updated upstream
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-=======
     @include flex-change(flex, center, column);
     padding: 0 35px;
->>>>>>> Stashed changes
 }
 .about-title{
     font-weight: 600;
