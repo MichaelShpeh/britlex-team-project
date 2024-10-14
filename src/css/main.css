@@ -113,6 +113,7 @@ body {
 }
 
 .header {
+  background-color: #637577;
   padding-top: 36px;
 }
 @media screen and (min-width: 575px) {
@@ -197,7 +198,6 @@ body {
 }
 .header .header-nav .header-nav__button {
   display: none;
-  transition: background-color 0.3s ease;
 }
 @media screen and (min-width: 992px) {
   .header .header-nav .header-nav__button {
@@ -207,8 +207,6 @@ body {
     background-color: transparent;
     padding: 8px 40px;
     margin-left: 100px;
-    font-family: "Poppins";
-    font-weight: 400;
     font-size: 18px;
   }
 }
@@ -218,10 +216,6 @@ body {
     padding: 8px 50px;
     margin-left: 240px;
   }
-}
-.header .header-nav .header-nav__button:hover {
-  background-color: #939393;
-  color: #f5f5f5;
 }
 .header .header-nav .header-nav__label {
   margin-left: 175px;
@@ -259,7 +253,6 @@ body {
   }
 }
 .header .header-nav .header-nav__title {
-  font-weight: 400;
   font-size: 24px;
 }
 @media screen and (min-width: 575px) {
@@ -277,50 +270,64 @@ body {
     font-size: 36px;
   }
 }
-.header .header-nav .header-nav__span {
-  color: #939393;
-}
-
 .hero {
-  background-color: #afffd3;
+  background-color: rgba(23, 131, 141, 0.7137254902);
+  padding-top: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hero .hero-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #000;
+}
+.hero .hero__text {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #8f95a5;
+}
+.hero .hero__button {
+  width: 289px;
+  height: 60px;
+  background: #263238;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
 }
 
 .skills {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding: 0 15px 50px 15px;
+  background-color: #676a90;
 }
 @media screen and (min-width: 575px) {
   .skills {
-    margin-top: 96px;
-    margin-bottom: 84px;
+    padding-bottom: 84px;
+    padding: 0 32px 84px 32px;
   }
 }
 @media screen and (min-width: 767px) {
   .skills {
-    margin-top: 56px;
-    margin-bottom: 52px;
+    padding-bottom: 52px;
+    padding: 0 30px 52px 30px;
   }
 }
 @media screen and (min-width: 992px) {
   .skills {
-    margin-top: 72px;
-    margin-bottom: 106px;
+    padding-bottom: 106px;
+    padding: 0 26px 106px 26px;
   }
 }
 @media screen and (min-width: 1330px) {
   .skills {
-    margin-top: 147px;
-    margin-bottom: 252px;
-  }
-}
-@media screen and (min-width: 575px) {
-  .skills > div {
-    padding: 0 32px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .skills > div {
-    padding: 0 26px;
+    padding-bottom: 252px;
   }
 }
 .skills__title {
@@ -397,7 +404,7 @@ body {
 }
 .skills__item {
   background-color: #f5f5f5;
-  padding: 8px 16px 38px 16px;
+  padding-bottom: 38px;
   border-radius: 5px;
   display: flex;
   flex-direction: column-reverse;
@@ -406,7 +413,7 @@ body {
 }
 @media screen and (min-width: 575px) {
   .skills__item {
-    padding: 5px 24px 36px 16px;
+    padding-bottom: 36px;
     height: 534px;
   }
 }
@@ -494,6 +501,8 @@ body {
 @media screen and (min-width: 1330px) {
   .skills__item__fourth {
     height: 343px;
+    justify-content: space-between;
+    padding: 0 25px 26px 22px;
   }
 }
 .skills__item__title {
@@ -645,11 +654,6 @@ body {
     width: 100%;
   }
 }
-@media screen and (min-width: 575px) {
-  .skills__item__btn {
-    width: auto;
-  }
-}
 @media screen and (min-width: 767px) {
   .skills__item__btn {
     width: auto;
@@ -675,11 +679,14 @@ body {
 
 .about {
   padding-bottom: 84px;
+  background-color: #71717a;
 }
 
 .about-div {
+  padding: 0 35px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -687,6 +694,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 333%;
+  color: #000;
   margin-bottom: 24px;
 }
 
@@ -705,12 +713,14 @@ body {
 .about-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .about-item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -817,13 +827,14 @@ body {
   }
 }
 .pricing {
-  padding-top: 42px;
+  background-color: #f6e091;
 }
 .pricing__titel {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
   line-height: 333%;
+  color: #000;
   align-items: center;
   text-align: center;
   margin-bottom: 49px;
@@ -861,6 +872,7 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
+  background-color: #eeeeee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -868,6 +880,7 @@ body {
   width: 170px;
   height: 37px;
   margin-bottom: 72px;
+  color: #546269;
 }
 .pricing__item__btn__span {
   font-family: var(--font-family);
@@ -877,31 +890,30 @@ body {
 }
 
 .contacts {
-  font-family: "Poppins";
-  padding: 72px 0 57px;
+  padding: 0 0 57px;
+  background-color: #c2ddbd;
 }
 @media screen and (min-width: 575px) {
   .contacts {
-    padding: 163px 0 144px;
+    padding: 0 0 144px;
   }
 }
 @media screen and (min-width: 767px) {
   .contacts {
-    padding: 65px 0 141px;
+    padding: 0 0 141px;
   }
 }
 @media screen and (min-width: 992px) {
   .contacts {
-    padding: 136px 0 194px;
+    padding: 0 0 194px;
   }
 }
 @media screen and (min-width: 1330px) {
   .contacts {
-    padding: 290px 0 220px;
+    padding: 0 0 220px;
   }
 }
 .contacts__text {
-  font-weight: 400;
   font-size: 14px;
   text-align: center;
   color: #8f95a5;
@@ -1024,8 +1036,6 @@ body {
   }
 }
 .contacts ::placeholder {
-  font-family: "Poppins";
-  font-weight: 400;
   font-size: 12px;
   color: #8f95a5;
 }
@@ -1040,7 +1050,6 @@ body {
   }
 }
 .contacts__btn {
-  font-family: "Poppins";
   border-radius: 5px;
   width: 290px;
   height: 60px;
@@ -1081,7 +1090,6 @@ body {
 
 .contact-us__title {
   display: none;
-  font-family: "Poppins";
   font-size: 30px;
   line-height: 267%;
   font-weight: 600;
@@ -1113,6 +1121,7 @@ body {
 .footer {
   padding-bottom: 46px;
   padding-top: 84px;
+  background-color: rgba(141, 28, 28, 0.5647058824);
 }
 @media screen and (min-width: 575px) {
   .footer {
@@ -1192,7 +1201,6 @@ body {
   width: 290px;
   height: 1px;
   position: absolute;
-  background-color: #c4c4c4;
   left: -160%;
   top: -50%;
 }
@@ -1217,9 +1225,6 @@ body {
     width: 1338px;
     left: -30%;
   }
-}
-.footer .footer-nav .footer-nav__span {
-  color: #939393;
 }
 .footer .footer-nav .footer-nav-list {
   display: flex;
