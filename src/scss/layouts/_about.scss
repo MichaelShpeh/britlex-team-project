@@ -2,9 +2,14 @@
     padding-bottom: 84px;
 }
 .about-div{
+<<<<<<< Updated upstream
     display: flex;
     flex-direction: column;
     align-items: center;
+=======
+    @include flex-change(flex, center, column);
+    padding: 0 35px;
+>>>>>>> Stashed changes
 }
 .about-title{
     font-weight: 600;
@@ -24,14 +29,10 @@
     margin-bottom: 10px;
 }
 .about-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-change(flex, center, column);
 }
 .about-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-change(flex, center, column);
 }
 .about-number{
     font-weight: 600;

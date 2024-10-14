@@ -52,3 +52,9 @@
 @mixin outline($size: 1px, $type: solid, $color: tomato) {
     outline: $size $type $color;
 }
+
+@mixin flex-change($property, $align, $direction) {
+    display: $property;
+    align-items: $align;
+    flex-direction: $direction;
+}
