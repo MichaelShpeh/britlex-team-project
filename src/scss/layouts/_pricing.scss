@@ -2,69 +2,82 @@
     padding-top: 42px;
 
     &__titel {
-        font-family: var(--font-family);
-        font-weight: 600;
+        // font-weight: 600;
         font-size: 24px;
         line-height: 333%;
         color: getColor(dark);
         align-items: center;
         text-align: center;
         margin-bottom: 49px;
+
+        @include media(md) {
+            font-size: 30px;
+            line-height: 267%;
+        }
     }
 
-    &__list {
+    &-list {
         display: flex;
         flex-direction: column;
+
         // justify-content: center;
-    }
+        @include media(md) {}
 
-    &__item {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
 
-        &__titel {
-            font-family: var(--font-family);
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 156%;
-            margin-top: 28px;
-            margin-bottom: 17px;
-            color: getColor(primary);
-        }
-
-        &__text {
-            font-family: var(--font-family);
-            font-weight: 400;
-            font-size: 13px;
-            width: 278px;
-            margin-bottom: 33px;
-            text-align: center;
-            color: getColor(secondary);
-        }
-
-        &__btn {
-            font-family: var(--font-family);
-            font-weight: 400;
-            font-size: 14px;
-            background-color: getColor(pricing-btn);
+        &__item {
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
-            gap: 5px;
-            width: 170px;
-            height: 37px;
-            margin-bottom: 72px;
-            color: getColor(gray);
+            text-align: center;
 
-
-            &__span {
-                font-family: var(--font-family);
-                font-weight: 400;
+            &--titel {
+                // font-weight: 600;
                 font-size: 18px;
+                line-height: 156%;
+                margin-top: 28px;
+                margin-bottom: 17px;
                 color: getColor(primary);
+    
+                @include media(md) {
+                    font-size: 24px;
+                    line-height: 117%;
+                }
+            }
+    
+            &--text {
+                // font-weight: 400;
+                font-size: 13px;
+                width: 278px;
+                margin-bottom: 33px;
+                text-align: center;
+                color: getColor(secondary);
+    
+                @include media(md) {
+                    font-size: 14px;
+                    // min-width: 350px;
+                    // max-width: 400px;
+                }
+            }
+    
+            &--btn {
+                // font-weight: 400;
+                font-size: 14px;
+                background-color: getColor(pricing-btn);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                width: 170px;
+                height: 37px;
+                margin-bottom: 72px;
+                color: getColor(gray);
+            
+                &--span {
+                    // font-weight: 400;
+                    font-size: 18px;
+                    color: getColor(primary);
+                }
             }
         }
     }
