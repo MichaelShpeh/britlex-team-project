@@ -1,35 +1,26 @@
 .skills {
 	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
+	padding: 0 15px 50px 15px;
+	background-color: #676a90;
 
 	@include media(md) {
-		margin-top: 96px;
-		margin-bottom: 84px;
+		padding-bottom: 84px;
+		padding: 0 32px 84px 32px;
 	}
 
 	@include media(lg) {
-		margin-top: 56px;
-		margin-bottom: 52px;
+		padding-bottom: 52px;
+		padding: 0 30px 52px 30px;
 	}
 
 	@include media(xl) {
-		margin-top: 72px;
-		margin-bottom: 106px;
+		padding-bottom: 106px;
+		padding: 0 26px 106px 26px;
 	}
 
 	@include media(xxl) {
-		margin-top: 147px;
-		margin-bottom: 252px;
-	}
-
-	> div {
-		@include media(md) {
-			padding: 0 32px;
-		}
-
-		@include media(xl) {
-			padding: 0 26px;
-		}
+		padding-bottom: 252px;
 	}
 
 	&__title {
@@ -100,7 +91,7 @@
 
 	&__item {
 		background-color: getColor(white);
-		padding: 8px 16px 38px 16px;
+		padding-bottom: 38px;
 		border-radius: 5px;
 		display: flex;
 		flex-direction: column-reverse;
@@ -108,7 +99,7 @@
 		align-items: center;
 
 		@include media(md) {
-			padding: 5px 24px 36px 16px;
+			padding-bottom: 36px;
 			height: 534px;
 		}
 
@@ -198,6 +189,8 @@
 
 			@include media(xxl) {
 				height: 343px;
+				justify-content: space-between;
+				padding: 0 25px 26px 22px;
 			}
 		}
 
@@ -335,16 +328,12 @@
 
 			&:hover,
 			&:focus {
-				background-color: #263238c0;
+				background-color: getColor(hover);
 			}
 
 			@include media(md) {
 				margin-top: 0;
 				width: 100%;
-			}
-
-			@include media(md) {
-				width: auto;
 			}
 
 			@include media(lg) {
