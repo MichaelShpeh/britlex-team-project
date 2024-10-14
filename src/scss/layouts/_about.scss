@@ -3,9 +3,8 @@
 	background-color: #71717a;
 }
 .about-div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    padding: 0 35px;
+	@include flex-change(flex, center, column);
 }
 .about-title {
 	font-weight: 600;
@@ -25,14 +24,10 @@
 	margin-bottom: 10px;
 }
 .about-list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex-change(flex, center, column);
 }
 .about-item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex-change(flex, center, column);
 }
 .about-number {
 	font-weight: 600;
