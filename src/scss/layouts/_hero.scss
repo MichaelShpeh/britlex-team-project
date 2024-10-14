@@ -1,34 +1,28 @@
 .hero {
-    background-color: #fff;
-    padding-top: 35px;
-    padding-left: 15px;
-    padding-right: 15px;
+	background-color: #0fa0b99c;
+	padding: 35px 15px 51px 15px;
 
-    .hero-title {
-        font-family: "Poppins";
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 150%;
-        text-align: center;
-        color: #000;
-    }
+	.hero-title {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 150%;
+		text-align: center;
+		color: #000;
+	}
 
-    .hero__text {
-        font-family: "Poppins";
-        font-weight: 400;
-        font-size: 14px;
-        text-align: center;
-        color: #8f95a5;
-    }
+	.hero__text {
+		font-size: 14px;
+		text-align: center;
+		color: #8f95a5;
+	}
 
-    .hero__button {
-        width: 289px;
-        height: 60px;
-        background: #263238;
-        border-radius: 5px;
-        font-family: "Poppins";
-        font-weight: 500;
-        font-size: 16px;
-        color: #fff;
-    }
+	.hero__button {
+		width: 289px;
+		height: 60px;
+		background: #263238;
+		border-radius: 5px;
+		font-weight: 500;
+		font-size: 16px;
+		color: #fff;
+	}
 }

@@ -1,17 +1,17 @@
 .contacts {
-	padding: 72px 0 57px;
+	padding: 0 0 57px;
 	background-color: #c2ddbd;
 	@include media(md) {
-		padding: 163px 0 144px;
+		padding: 0 0 144px;
 	}
 	@include media(lg) {
-		padding: 65px 0 141px;
+		padding: 0 0 141px;
 	}
 	@include media(xl) {
-		padding: 136px 0 194px;
+		padding: 0 0 194px;
 	}
 	@include media(xxl) {
-		padding: 290px 0 220px;
+		padding: 0 0 220px;
 	}
 	&__text {
 		font-size: 14px;
