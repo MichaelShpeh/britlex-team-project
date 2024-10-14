@@ -1,3 +1,5 @@
-body {
+*,
+*::after,
+*::before {
 	font-family: getFont('poppins');
 }
