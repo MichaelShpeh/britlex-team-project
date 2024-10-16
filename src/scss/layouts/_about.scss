@@ -1,9 +1,9 @@
 .about {
 	padding-bottom: 84px;
-	background-color: #e4ffe4;
+	background-color: #e0e0e0;
 }
 .about-div {
-	padding: 0 35px;
+	padding: 0 10px;
 	@include flex(col, true, false) ;
 }
 .about-title {
@@ -41,7 +41,6 @@
 .about-number {
 	font-weight: 600;
 	font-size: 24px;
-	line-height: 333%;
 	color: getColor(primary);
 }
 .about-description {
@@ -129,7 +128,6 @@
 	}
 	.about-number {
 		font-size: 30px;
-		line-height: 267%;
 	}
 	.about-description {
 		font-size: 16px;
@@ -162,7 +160,6 @@
 	}
 	.about-number {
 		font-size: 48px;
-		line-height: 167%;
 	}
 	.about-description {
 		font-weight: 400;
