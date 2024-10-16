@@ -12,6 +12,15 @@
 	line-height: 333%;
 	color: getColor(dark);
 	margin-bottom: 24px;
+	text-align: center;
+
+	&::after{
+		content: '';
+		display: block;
+		width: 283px;
+		height: 283px;
+		background-image: url(../svg/about-us-sm.svg);
+	}
 }
 .about-image {
 	margin-bottom: 27px;
@@ -47,6 +56,15 @@
 	.about-title {
 		font-size: 30px;
 		line-height: 267%;
+		text-align: left;
+		
+		&::after{
+			content: '';
+			display: block;
+			width: 352px;
+			height: 352px;
+			background-image: url(../svg/about-us-md.svg);
+		}
 	}
 	.about-text {
 		font-size: 14px;
@@ -65,14 +83,23 @@
 		align-items: normal;
 		position: relative;
 	}
+	.about-title{
+
+		&::after{
+			content: '';
+			display: block;
+			width: 295px;
+			height: 295px;
+			background-image: url(../svg/about-us-lg.svg);
+			
+			position: absolute;
+			top: 36px;
+			right: 35px;
+		}
+	}
 	.about-text {
 		text-align: left;
 		max-width: 320px;
-	}
-	.about-image {
-		position: absolute;
-		top: 36px;
-		right: 35px;
 	}
 	.about-list {
 		width: 320px;
@@ -85,6 +112,13 @@
 	.about-title {
 		font-size: 36px;
 		line-height: 222%;
+		&::after{
+			content: '';
+			display: block;
+			width: 336px;
+			height: 336px;
+			background-image: url(../svg/about-us-xl.svg);
+		}
 	}
 	.about-text {
 		font-size: 16px;
@@ -109,13 +143,19 @@
 		font-size: 48px;
 		line-height: 167%;
 		margin-bottom: 23px;
+		&::after{
+			content: '';
+			display: block;
+			width: 500px;
+			height: 500px;
+			background-image: url(../svg/about-us-xxl.svg);
+
+			top: 0;
+		}
 	}
 	.about-text {
 		font-size: 20px;
 		margin-bottom: 42px;
-	}
-	.about-image {
-		top: 0;
 	}
 	.about-list {
 		width: 600px;
