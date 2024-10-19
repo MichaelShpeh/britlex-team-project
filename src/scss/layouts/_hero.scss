@@ -5,7 +5,7 @@
     @include media(md) {
         padding: 10px 40px 100px;
     }
-  
+
     .hero-title {
         font-family: 'Poppins';
         font-weight: 600;
@@ -19,24 +19,20 @@
             font-weight: 600;
             font-size: 34px;
             line-height: 132%;
-            color: #000;
             margin-bottom: 25px;
         }
+
     }
 
     .hero__text {
-        font-family: 'Poppins';
-        font-weight: 400;
         font-size: 14px;
         text-align: center;
+        color: #8f95a5;
         color: getColor(secondary);
         margin-bottom: 35px;
 
         @include media(md) {
-            font-weight: 400;
             font-size: 16px;
-            text-align: center;
-            color: #8f95a5;
         }
     }
 
@@ -67,7 +63,7 @@
         @media screen and (min-width:$sm) {
             width: 300px;
             height: 300px;
-            background-image: url(../../svg/hero-sm.svg);
+            background-image: url(../svg/hero-sm.svg);
         }
 
         @media screen and (min-width:$md) {
@@ -96,4 +92,30 @@
 
     }
 
+
+
+}
+
+.hero-title::after {
+    content: '';
+    display: block;
+    outline: #000 solid 1px;
+
+    @media screen and (min-width:$lg) {
+        width: 51px;
+        height: 51px;
+        background-image: url(../../svg/hero-lg.svg);
+    }
+
+    @include media(xl) {
+        width: 60px;
+        height: 60px;
+        background-image: url(../../svg/hero-xl.svg);
+    }
+
+    @include media(xxl) {
+        width: 85px;
+        height: 85px;
+        background-image: url(../../svg/hero-xxl.svg);
+    }
 }
