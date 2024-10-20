@@ -122,7 +122,8 @@
             }
 
             &--btn {
-                // font-weight: 400;
+                font-family: getFont(poppins);
+                font-weight: 400;
                 font-size: 14px;
                 background-color: getColor('pricing-btn');
                 display: flex;
@@ -150,13 +151,17 @@
                 @include media('xxl') {}
 
                 &--span {
-                    // font-weight: 400;
+                    font-weight: 400;
+                    width: 90px;
+                    height: 27px;
                     font-size: 18px;
                     color: getColor('primary');
 
                     @include media('md') {
                         display: block;
                         font-size: 24px;
+                        height: 36px;
+                        width: 90px;
                     }
 
                     @include media('lg') {}
