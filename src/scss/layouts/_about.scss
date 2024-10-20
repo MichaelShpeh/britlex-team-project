@@ -40,7 +40,7 @@
 			@include flex(col, true, false) ;
 			gap: 25px;
 			
-			.about-item {
+			.about-list-item {
 				@include flex(col, true, false);
 
 				.about-number {
@@ -62,28 +62,31 @@
 @include media(md) {
 	.about {
 		padding-bottom: 130px;
-		
-		.about-title {
-		    font-size: 30px;
-		    line-height: 267%;
-		    text-align: center;
-		    
-		    &::after{
-		    	content: '';
-		    	display: block;
-		    	width: 352px;
-		    	height: 352px;
-		    	background-image: url(../svg/about-us-md.svg);
-		    }
-	    }
 
-		.about-text {
-		    font-size: 14px;
-	    }
-	    .about-list {
-	    	width: 425px;
-	    	flex-direction: row;
-	    	justify-content: space-between;
+		.about-div{
+		    
+		    .about-title {
+		        font-size: 30px;
+		        line-height: 267%;
+		        text-align: center;
+		        
+		        &::after{
+		        	content: '';
+		        	display: block;
+		        	width: 352px;
+		        	height: 352px;
+		        	background-image: url(../svg/about-us-md.svg);
+		        }
+	        }
+    
+		    .about-text {
+		        font-size: 14px;
+	        }
+	        .about-list {
+	        	width: 425px;
+	        	flex-direction: row;
+	        	justify-content: space-between;
+	        }
 	    }
 	}
 }
@@ -125,31 +128,37 @@
 	.about {
 		padding-bottom: 100px;
 
-	    .about-title {
-	    	font-size: 36px;
-	    	line-height: 222%;
+		.about-div{
 
-	    	&::after{
-	    		content: '';
-	    		display: block;
-	    		width: 336px;
-	    		height: 336px;
-	    		background-image: url(../svg/about-us-xl.svg);
-	    	}
-	    }
-	    .about-text {
-	    	font-size: 16px;
-	    	max-width: 530px;
-	    }
-	    .about-list {
-	    	width: 400px;
-
-	        .about-number {
-	        	font-size: 30px;
+	        .about-title {
+	        	font-size: 36px;
+	        	line-height: 222%;
+    
+	        	&::after{
+	        		content: '';
+	        		display: block;
+	        		width: 336px;
+	        		height: 336px;
+	        		background-image: url(../svg/about-us-xl.svg);
+	        	}
 	        }
-
-	        .about-description {
+	        .about-text {
 	        	font-size: 16px;
+	        	max-width: 530px;
+	        }
+	        .about-list {
+	        	width: 400px;
+
+				.about-list-item {
+    
+	                .about-number {
+	                	font-size: 30px;
+	                }
+        
+	                .about-description {
+	                	font-size: 16px;
+	                }
+			    }
 	        }
 	    }
 	}
@@ -158,37 +167,43 @@
 	.about {
 		padding-bottom: 188px;
 
-		.about-title {
-			font-size: 48px;
-			line-height: 167%;
-			margin-bottom: 23px;
-			
-			&::after{
-				content: '';
-				display: block;
-				width: 500px;
-				height: 500px;
-				background-image: url(../svg/about-us-xxl.svg);
-	
-				top: 0;
-			}
-		}
+		.about-div{
+    
+		    .about-title {
+		    	font-size: 48px;
+		    	line-height: 167%;
+		    	margin-bottom: 23px;
+		    	
+		    	&::after{
+		    		content: '';
+		    		display: block;
+		    		width: 500px;
+		    		height: 500px;
+		    		background-image: url(../svg/about-us-xxl.svg);
+	    
+		    		top: 0;
+		    	}
+		    }
+    
+	        .about-text {
+	        	font-size: 20px;
+	        	margin-bottom: 42px;
+	        }
+		    .about-list {
+		    	width: 600px;
 
-	    .about-text {
-	    	font-size: 20px;
-	    	margin-bottom: 42px;
+				.about-list-item {
+    
+		    	    .about-number {
+		    	    	font-size: 48px;
+		    	    }
+        
+		    	    .about-description {
+		    	    	font-weight: 400;
+		    	    	font-size: 20px;
+		    	    }
+			    }
+		    }
 	    }
-		.about-list {
-			width: 600px;
-
-			.about-number {
-				font-size: 48px;
-			}
-
-			.about-description {
-				font-weight: 400;
-				font-size: 20px;
-			}
-		}
 	}
 }
