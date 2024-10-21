@@ -1,22 +1,30 @@
 @mixin media($breakpoint) {
-	@if $breakpoint == 'sm' {
+	@if $breakpoint =='sm' {
 		@media screen and (min-width: 320px) {
 			@content;
 		}
-	} @else if $breakpoint == 'md' {
+	}
+
+	@else if $breakpoint =='md' {
 		@media screen and (min-width: 575px) {
 			@content;
 		}
-	} @else if $breakpoint == 'lg' {
+	}
+
+	@else if $breakpoint =='lg' {
 		@media screen and (min-width: 767px) {
 			@content;
 		}
-	} @else if $breakpoint == 'xl' {
+	}
+
+	@else if $breakpoint =='xl' {
 		@media screen and (min-width: 992px) {
 			@content;
 		}
-	} @else if $breakpoint == 'xxl' {
-		@media screen and (min-width: 1330px) {
+	}
+
+	@else if $breakpoint =='xxl' {
+		@media screen and (min-width: 1600px) {
 			@content;
 		}
 	}
@@ -24,16 +32,21 @@
 
 @mixin flex($property: row, $center: false, $beetween: false) {
 	display: flex;
-	@if $property == row {
+
+	@if $property ==row {
 		flex-direction: row;
-	} @else if $property == col {
+	}
+
+	@else if $property ==col {
 		flex-direction: column;
 	}
-	@if $center == true {
+
+	@if $center ==true {
 		justify-content: center;
 		align-items: center;
 	}
-	@if $beetween == true {
+
+	@if $beetween ==true {
 		justify-content: space-between;
 	}
 }
@@ -50,5 +63,5 @@
 
 //todo var.2 
 @mixin outline($size: 1px, $type: solid, $color: tomato) {
-    outline: $size $type $color;
+	outline: $size $type $color;
 }
