@@ -2,11 +2,11 @@
 	padding-bottom: 84px;
 	background-color: #e0e0e0;
 
-	.about-div {
+	.container {
 		padding: 0 10px;
 		@include flex(col, true, false) ;
 
-		.about-title {
+		.about__title {
 			font-weight: 600;
 			font-size: 24px;
 			line-height: 333%;
@@ -28,28 +28,29 @@
 			}
 		}
 
-		.about-text {
+		.about__text {
 			font-weight: 400;
 			font-size: 13px;
 			text-align: center;
 			color: getColor(secondary);
 			margin-bottom: 26px;
+			width: 295px;
 		}
 
-		.about-list {
+		.about__list {
 			@include flex(col, true, false) ;
 			gap: 25px;
 			
-			.about-list__item {
+			.about__list-item {
 				@include flex(col, true, false);
 
-				.about-number {
+				.about__number {
 					font-weight: 600;
 					font-size: 24px;
 					color: getColor(primary);
 				}
 
-				.about-description {
+				.about__description {
 					font-weight: 400;
 					font-size: 15px;
 					color: getColor(secondary);
@@ -63,9 +64,9 @@
 	.about {
 		padding-bottom: 130px;
 
-		.about-div{
+		.container{
 		    
-		    .about-title {
+		    .about__title {
 		        font-size: 30px;
 		        line-height: 267%;
 		        text-align: center;
@@ -79,10 +80,11 @@
 		        }
 	        }
     
-		    .about-text {
+		    .about__text {
 		        font-size: 14px;
+				width: 496px;
 	        }
-	        .about-list {
+	        .about__list {
 	        	width: 425px;
 	        	flex-direction: row;
 	        	justify-content: space-between;
@@ -94,11 +96,11 @@
 	.about {
 		padding-bottom: 88px;
 
-	    .about-div {
+	    .container {
 	    	align-items: normal;
 	    	position: relative;
 
-	        .about-title{
+	        .about__title{
 	        	text-align: left;
         
 	        	&::after{
@@ -114,11 +116,11 @@
 	        	}
 	        }
 
-	        .about-text {
+	        .about__text {
 	        	text-align: left;
-	        	max-width: 320px;
+	        	width: 320px;
 	        }
-	        .about-list {
+	        .about__list {
 	        	width: 320px;
 	        }
 	    }
@@ -128,9 +130,9 @@
 	.about {
 		padding-bottom: 100px;
 
-		.about-div{
+		.container{
 
-	        .about-title {
+	        .about__title {
 	        	font-size: 36px;
 	        	line-height: 222%;
     
@@ -142,20 +144,20 @@
 	        		background-image: url(../svg/about-us-xl.svg);
 	        	}
 	        }
-	        .about-text {
+	        .about__text {
 	        	font-size: 16px;
-	        	max-width: 530px;
+	        	width: 520px;
 	        }
-	        .about-list {
+	        .about__list {
 	        	width: 400px;
 
-				.about-list__item {
+				.about__list-item {
     
-	                .about-number {
+	                .about__number {
 	                	font-size: 30px;
 	                }
         
-	                .about-description {
+	                .about__description {
 	                	font-size: 16px;
 	                }
 			    }
@@ -167,9 +169,9 @@
 	.about {
 		padding-bottom: 188px;
 
-		.about-div{
+		.container{
     
-		    .about-title {
+		    .about__title {
 		    	font-size: 48px;
 		    	line-height: 167%;
 		    	margin-bottom: 23px;
@@ -181,24 +183,25 @@
 		    		height: 500px;
 		    		background-image: url(../svg/about-us-xxl.svg);
 	    
-		    		top: 0;
+		    		top: -30px;
 		    	}
 		    }
     
-	        .about-text {
+	        .about__text {
 	        	font-size: 20px;
 	        	margin-bottom: 42px;
+				width: 635px;
 	        }
-		    .about-list {
+		    .about__list {
 		    	width: 600px;
 
-				.about-list__item {
+				.about__list-item {
     
-		    	    .about-number {
+		    	    .about__number {
 		    	    	font-size: 48px;
 		    	    }
         
-		    	    .about-description {
+		    	    .about__description {
 		    	    	font-weight: 400;
 		    	    	font-size: 20px;
 		    	    }
