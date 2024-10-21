@@ -40,7 +40,7 @@
 			@include flex(col, true, false) ;
 			gap: 25px;
 			
-			.about-list-item {
+			.about-list__item {
 				@include flex(col, true, false);
 
 				.about-number {
@@ -149,7 +149,7 @@
 	        .about-list {
 	        	width: 400px;
 
-				.about-list-item {
+				.about-list__item {
     
 	                .about-number {
 	                	font-size: 30px;
@@ -192,7 +192,7 @@
 		    .about-list {
 		    	width: 600px;
 
-				.about-list-item {
+				.about-list__item {
     
 		    	    .about-number {
 		    	    	font-size: 48px;
