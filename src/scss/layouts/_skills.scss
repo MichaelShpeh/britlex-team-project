@@ -1,25 +1,37 @@
 .skills {
 	padding-bottom: 50px;
-	padding: 0 15px 50px 15px;
 	background-color: #d8dbff;
 
 	@include media(md) {
 		padding-bottom: 84px;
-		padding: 0 32px 84px 32px;
 	}
 
 	@include media(lg) {
 		padding-bottom: 52px;
-		padding: 0 30px 52px 30px;
 	}
 
 	@include media(xl) {
 		padding-bottom: 106px;
-		padding: 0 26px 106px 26px;
 	}
 
 	@include media(xxl) {
 		padding-bottom: 252px;
+	}
+
+	> div {
+		padding: 0 15px 0 15px;
+
+		@include media(md) {
+			padding: 0 32px 0 32px;
+		}
+
+		@include media(lg) {
+			padding: 0 30px 0 30px;
+		}
+
+		@include media(xl) {
+			padding: 0 26px 0 26px;
+		}
 	}
 
 	&__title {
@@ -93,7 +105,7 @@
 		padding-bottom: 38px;
 		border-radius: 5px;
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 
@@ -108,6 +120,39 @@
 		}
 
 		&__first {
+			&::before {
+				content: '';
+				display: block;
+				background-image: url(../svg/skills-first-sm.svg);
+				background-size: 213px 213px;
+				width: 213px;
+				height: 213px;
+
+				@include media(md) {
+					background-size: 185px 185px;
+					width: 185px;
+					height: 185px;
+				}
+
+				@include media(lg) {
+					background-size: 214px 214px;
+					width: 214px;
+					height: 214px;
+				}
+
+				@include media(xl) {
+					background-size: 260px 260px;
+					width: 260px;
+					height: 260px;
+				}
+
+				@include media(xxl) {
+					background-size: 390px 390px;
+					width: 390px;
+					height: 390px;
+				}
+			}
+
 			@include media(lg) {
 				grid-area: 1 / 1 / 3 / 2;
 
@@ -125,6 +170,38 @@
 		}
 
 		&__second {
+			&::before {
+				content: '';
+				display: block;
+				background-image: url(../svg/skills-second-sm.svg);
+				background-size: 204px 204px;
+				width: 204px;
+				height: 204px;
+
+				@include media(md) {
+					background-size: 182px 182px;
+					width: 182px;
+					height: 182px;
+				}
+
+				@include media(lg) {
+					background-size: 200px 200px;
+					width: 200px;
+					height: 200px;
+				}
+
+				@include media(xl) {
+					background-size: 205px 205px;
+					width: 205px;
+					height: 205px;
+				}
+
+				@include media(xxl) {
+					background-size: 293px 293px;
+					width: 293px;
+					height: 293px;
+				}
+			}
 			@include media(lg) {
 				grid-area: 1 / 2 / 2 / 3;
 				height: 441px;
@@ -146,6 +223,39 @@
 		}
 
 		&__third {
+			&::before {
+				content: '';
+				display: block;
+				background-image: url(../svg/skills-third-sm.svg);
+				background-size: 236px 157px;
+				width: 236px;
+				height: 157px;
+
+				@include media(md) {
+					background-size: 198px 132px;
+					width: 198px;
+					height: 132px;
+				}
+
+				@include media(lg) {
+					background-size: 216px 144px;
+					width: 216px;
+					height: 144px;
+				}
+
+				@include media(xl) {
+					background-size: 243px 162px;
+					width: 243px;
+					height: 162px;
+				}
+
+				@include media(xxl) {
+					background-size: 371px 247px;
+					width: 371px;
+					height: 247px;
+				}
+			}
+
 			@include media(lg) {
 				grid-area: 1 / 3 / 2 / 4;
 				padding: 0;
@@ -175,6 +285,48 @@
 		}
 
 		&__fourth {
+			&::before {
+				content: '';
+				display: block;
+				background-image: url(../svg/skills-fourth-sm.svg);
+				background-size: 232px 154px;
+				width: 232px;
+				height: 154px;
+
+				@include media(md) {
+					background-size: 206px 137px;
+					width: 206px;
+					height: 137px;
+				}
+
+				@include media(lg) {
+					display: none;
+				}
+			}
+
+			@include media(lg) {
+				&::after {
+					content: '';
+					display: block;
+					background-image: url(../svg/skills-fourth-lg.svg);
+					background-size: 202px 134px;
+					width: 202px;
+					height: 134px;
+
+					@include media(xl) {
+						background-size: 254px 169px;
+						width: 254px;
+						height: 169px;
+					}
+
+					@include media(xxl) {
+						background-size: 382px 255px;
+						width: 382px;
+						height: 255px;
+					}
+				}
+			}
+
 			@include media(lg) {
 				grid-area: 2 / 2 / 3 / 4;
 				padding: 0 0 26px 22px;
