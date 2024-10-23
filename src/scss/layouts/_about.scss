@@ -13,7 +13,7 @@
             color: getColor(dark);
             display: flex;
             flex-direction: column;
-            //! @include flex(col, false, false)
+            @include flex(col, false, false);
             gap: 24px;
             margin-bottom: 27px;
             text-align: center;
@@ -88,8 +88,7 @@
             }
             .about-list {
                 width: 425px;
-                flex-direction: row;
-                justify-content: space-between;
+				@include flex(row, false, true);
 
                 .about-list__item{
                     gap: 2px;
@@ -101,10 +100,10 @@
 @include media(lg) {
     .about {
         padding-bottom: 88px;
+        position: relative;
 
         .container--about {
             align-items: normal;
-            position: relative;
 
             .about__title {
                 text-align: left;
@@ -181,7 +180,7 @@
 @include media(xxl) {
     .about {
         padding-top: 30px;
-        padding-bottom: 188px;
+        padding-bottom: 219px;
 
         .container--about {
 
@@ -197,7 +196,7 @@
                     height: 500px;
                     background-image: url(../images/about-us-xxl.svg);
 
-                    top: -30px;
+                    top: 0;
                 }
             }
 
