@@ -1,140 +1,107 @@
 .footer {
-	padding-bottom: 46px;
-	background-color: #fcffd2;
+    padding-bottom: 46px;
+    padding-top: 84px;
 
-	@include media(md) {
-		padding-bottom: 26px;
-	}
-	@include media(lg) {
-		padding-bottom: 15px;
-	}
-	@include media(xl) {
-		padding-bottom: 24px;
-	}
-	@include media(xxl) {
-		padding-bottom: 64px;
-	}
+    @include media(md){
+        padding-bottom: 26px;
+        padding-top: 169px;
+    }
+    @include media(lg){
+        padding-bottom: 15px;
+        padding-top: 131px;
+    }
+    @include media(xl){
+        padding-bottom: 24px;
+        padding-top: 180px;
+    }
+    @include media(xxl){
+        padding-bottom: 64px;
+        padding-top: 165px;
+    }
 
-	.footer-nav {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+    .footer-container{
+        @include flex(col, true);
 
-		@include media(md) {
-			flex-direction: row;
-			justify-content: start;
-			margin-left: 30px;
-			margin-right: 8px;
-		}
-		@include media(xxl) {
-			margin-left: 20px;
-			margin-right: 0px;
-		}
+        @include media(md){
+            @include flex(row, false, true);
+            margin-left: 30px;
+            margin-right: 8px;
+        }
+        @include media(xxl){
+            margin-left: 20px;
+            margin-right: 0px;
+        }
 
-		.footer-nav__title {
-			font-weight: 400;
-			font-size: 24px;
-			margin-bottom: 15px;
-			position: relative;
+        .footer-container__title{
+            margin-bottom: 15px;
+			
+            @include media(md){
+                margin-bottom: 0px;
+                margin-right: 104px;
+            }
+            @include media(lg){
+                margin-right:261px
+            } 
+            @include media(xl){
+                margin-right: 422px;
+            }
+            @include media(xxl){
+                margin-right: 550px;
+            }
+       }
+       .footer-container-list{
+        display: flex;
+        margin-left: 13px;
+        margin-right: 7px;
 
-			@include media(md) {
-				font-size: 30px;
-				margin-bottom: 0px;
-				margin-right: 104px;
-			}
-			@include media(lg) {
-				margin-right: 261px;
-			}
-			@include media(xl) {
-				margin-right: 422px;
-			}
-			@include media(xxl) {
-				margin-right: 550px;
-				font-size: 36px;
-			}
+        .footer-container-list__link{
+            color: getColor('secondary')
+        }
+        .footer-container-list__item{
+            font-weight: 500;
+            font-size: 11px;
+            position: relative;
 
-			&::before {
-				content: '';
-				width: 290px;
-				height: 1px;
-				position: absolute;
-				background-color:#C4C4C4;
-				left: -160%;
-				top: -50%;
+            @include media(md){
+                font-size: 12px;
+            }
+            @include media(lg){
+                font-size: 13px;
+                font-weight: 400;
+            }
+            @include media(xl){
+                font-size: 16px;
+            }
+            @include media(xxl){
+                font-size: 24px;
+            }
+        } 
 
-				@include media(md) {
-					width: 510px;
-					left: 0%;
-				}
-				@include media(lg) {
-					width: 690px;
-				}
-				@include media(xl) {
-					width: 929px;
-				}
-				@include media(xxl) {
-					width: 1338px;
-					left: -30%;
-				}
-			}
-		}
-		.footer-nav__span {
-			color: map-get($colors, secondary);
-		}
-		.footer-nav-list {
-			display: flex;
-			margin-left: 13px;
-			margin-right: 7px;
+        .footer-container-list__item:not(:last-of-type){
+            margin-right: 14px;
 
-			.footer-nav-list__link {
-				color: map-get($colors, secondary);
-			}
-			.footer-nav-list__item {
-				font-weight: 500;
-				font-size: 11px;
-				position: relative;
+            &::before{
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: getColor('secondary');
+                position: absolute;
+                left: 105%;
+                top: 35%;
 
-				@include media(md) {
-					font-size: 12px;
-				}
-				@include media(lg) {
-					font-size: 13px;
-					font-weight: 400;
-				}
-				@include media(xl) {
-					font-size: 16px;
-				}
-				@include media(xxl) {
-					font-size: 24px;
-				}
-			}
-
-			.footer-nav-list__item:not(:last-of-type) {
-				margin-right: 14px;
-
-				&::before {
-					content: '';
-					width: 4px;
-					height: 4px;
-					border-radius: 50%;
-					background-color: map-get($colors, secondary);
-					position: absolute;
-					left: 105%;
-					top: 35%;
-
-					@include media(xl) {
-						left: 104%;
-						top: 43%;
-					}
-					@include media(xxl) {
-						left: 102%;
-						top: 42%;
-						width: 5px;
-						height: 5px;
-					}
-				}
-			}
-		}
-	}
+                @include media(xl){
+                    left: 104%;
+                    top: 43%;
+                }
+                @include media(xxl){
+                    left: 102%;
+                    top: 42%;
+                    width: 5px;
+                    height: 5px;
+                }
+            }
+        }
+       }
+    }
 }
