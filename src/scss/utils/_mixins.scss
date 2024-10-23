@@ -5,6 +5,12 @@
 		}
 	}
 
+	@else if $breakpoint =='sm-max' {
+		@media screen and (max-width: 574px) {
+			@content
+		}
+	}
+
 	@else if $breakpoint =='md' {
 		@media screen and (min-width: 575px) {
 			@content;
