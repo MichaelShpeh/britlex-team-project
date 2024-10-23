@@ -2,7 +2,7 @@
     padding-bottom: 84px;
     background-color: #e0e0e0;
 
-    .container--about {
+    .container {
         padding: 0 10px;
         @include flex(col, true, false);
 
@@ -64,7 +64,7 @@
     .about {
         padding-bottom: 130px;
 
-        .container--about {
+        .container {
 
             .about__title {
                 font-size: 30px;
@@ -102,7 +102,7 @@
     .about {
         padding-bottom: 88px;
 
-        .container--about {
+        .container {
             align-items: normal;
             position: relative;
 
@@ -140,7 +140,7 @@
     .about {
         padding-bottom: 100px;
 
-        .container--about {
+        .container {
 
             .about__title {
                 font-size: 36px;
@@ -183,7 +183,7 @@
         padding-top: 30px;
         padding-bottom: 188px;
 
-        .container--about {
+        .container {
 
             .about__title {
                 font-size: 48px;
