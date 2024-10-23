@@ -62,12 +62,19 @@
 }
 
 //! ----------- 01.Міксін outline -----------
-//todo var.1 
+//todo var.1
 // @mixin outline($size: 1px, $type: solid, $color) {
 //     outline: $size $type $color;
 // }
 
-//todo var.2 
+//todo var.2
 @mixin outline($size: 1px, $type: solid, $color: tomato) {
 	outline: $size $type $color;
 }
+
+@mixin title($size: 18px, $weight: 600, $lh: 0) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $lh;
+}
+
