@@ -1,116 +1,138 @@
 .hero {
-	background-color: #cafbffb6;
-	padding: 35px 15px 50px;
+    background-color: #cafbffb6;
+    margin-bottom: 50px;
 
-	@include media(md) {
-		padding: 10px 40px 100px;
-	}
+    @include media(md) {
+        margin-bottom: 100px;
+    }
 
-	.hero-title {
-		font-family: 'Poppins';
-		font-weight: 600;
-		font-size: 24px;
-		line-height: 150%;
-		text-align: center;
-		color: #000;
-		margin-bottom: 20px;
+    .hero-title {
+        width: 220px;
+        height: 72px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+        color: #000;
+        margin: 0 auto;
+        margin-bottom: 20px;
 
-		@include media(md) {
-			font-weight: 600;
-			font-size: 34px;
-			line-height: 132%;
-			margin-bottom: 25px;
-		}
-	}
 
-	.hero__text {
-		font-size: 14px;
-		text-align: center;
-		color: #8f95a5;
-		color: getColor(secondary);
-		margin-bottom: 35px;
+        @include media(md) {
+            font-size: 34px;
+            line-height: 132%;
+            margin-bottom: 25px;
+        }
 
-		@include media(md) {
-			font-size: 16px;
-		}
-	}
+    }
 
-	.hero__button {
-		width: 289px;
-		height: 60px;
-		display: block;
-		background: #263238;
-		border-radius: 5px;
-		font-family: 'Poppins';
-		font-weight: 500;
-		font-size: 16px;
-		color: getColor(white);
-		margin: 0 auto;
+    .hero-span {
 
-		@include media(md) {
-			width: 305px;
-			height: 75px;
-			font-size: 18px;
-		}
-	}
+        @include media(sm-max) {
+            text-align: center;
+            margin-right: 5px;
+        }
+    }
 
-	.hero-title::before {
-		content: '';
-		display: block;
-		margin: 0 auto;
+    .hero__text {
+        font-size: 14px;
+        text-align: center;
+        color: getColor(secondary);
+        margin-bottom: 35px;
 
-		@media screen and (min-width: $sm) {
-			width: 300px;
-			height: 300px;
-			background-image: url(../images/hero-sm.svg);
-		}
+        @include media(md) {
+            font-size: 16px;
+        }
+    }
 
-		@media screen and (min-width: $md) {
-			width: 425px;
-			height: 425px;
-			background-image: url(../../images/hero-md.svg);
-		}
+    .hero__button {
+        width: 289px;
+        height: 60px;
+        display: block;
+        background: #263238;
+        border-radius: 5px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        color: getColor(white);
+        margin: 0 auto;
 
-		@media screen and (min-width: $lg) {
-			width: 350px;
-			height: 350px;
-			background-image: url(../../images/hero-lg.svg);
-		}
+        @include media(md) {
+            width: 305px;
+            height: 75px;
+            font-size: 18px;
+        }
+    }
 
-		@media screen and (min-width: $xl) {
-			width: 460px;
-			height: 460px;
-			background-image: url(../../images/hero-xl.svg);
-		}
+    .container::before {
+        content: '';
+        display: block;
+        margin: 0 auto;
 
-		@media screen and (min-width: $xxl) {
-			width: 660px;
-			height: 660px;
-			background-image: url(../../images/hero.svg);
-		}
-	}
+        @include media(sm) {
+            width: 300px;
+            height: 300px;
+            background-image: url(../svg/hero-sm.svg);
+        }
+
+        @include media(md) {
+            width: 425px;
+            height: 425px;
+            background-image: url(../../svg/hero-md.svg);
+        }
+
+        @include media(lg) {
+            width: 350px;
+            height: 350px;
+            background-image: url(../../svg/hero-lg.svg);
+        }
+
+        @include media(xl) {
+            width: 460px;
+            height: 460px;
+            background-image: url(../../svg/hero-xl.svg);
+        }
+
+        @include media(xxl) {
+            width: 660px;
+            height: 660px;
+            background-image: url(../../svg/hero.svg);
+        }
+    }
+
+
+
 }
 
 .hero-title::after {
-	content: '';
-	display: block;
-	outline: #000 solid 1px;
+    content: '';
+    outline: #000 solid 1px;
+    rotate: 45%;
+    padding-bottom: 15px;
 
-	@media screen and (min-width: $lg) {
-		width: 51px;
-		height: 51px;
-		background-image: url(../../images/hero-lg.svg);
-	}
+    @include media(sm) {
+        display: none;
+    }
 
-	@include media(xl) {
-		width: 60px;
-		height: 60px;
-		background-image: url(../../images/hero-xl.svg);
-	}
 
-	@include media(xxl) {
-		width: 85px;
-		height: 85px;
-		background-image: url(../../images/hero-xxl.svg);
-	}
+    @include media(lg) {
+        width: 51px;
+        height: 51px;
+        display: block;
+        background-image: url(../../svg/hero-lg.svg);
+    }
+
+    @include media(xl) {
+        width: 60px;
+        height: 60px;
+        background-image: url(../../svg/hero-xl.svg);
+    }
+
+    @include media(xxl) {
+        width: 85px;
+        height: 85px;
+        background-image: url(../../svg/hero-xxl.svg);
+    }
 }
+

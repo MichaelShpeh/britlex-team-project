@@ -1,17 +1,19 @@
 //? ============= var-01.SCSS-змінні ============
 //* ================= break-points ==================
 $sm: 320px;
+$sm-max: 574px;
 $md: 575px;
 $lg: 767px;
 $xl: 992px;
-$xxl: 1330px;
+$xxl: 1600px;
 
 //? ==============  var-02.map-get ==============
 // * ================= break-points ===================
 $break-points: (
 	sm: 320px,
+	sm-max: 574px,
 	md: 575px,
 	lg: 767px,
 	xl: 992px,
-	xxl: 1330px
+	xxl: 1600px
 );
