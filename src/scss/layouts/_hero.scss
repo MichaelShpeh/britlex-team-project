@@ -108,6 +108,7 @@
 .hero-title::after {
     content: '';
     outline: #000 solid 1px;
+    rotate: 45%;
     padding-bottom: 15px;
 
     @include media(sm) {
