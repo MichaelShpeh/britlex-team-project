@@ -4,6 +4,7 @@
     padding-bottom: 50px;
 
     @include media(md) {
+        height: 768px;
         padding-bottom: 100px;
     }
 
@@ -21,6 +22,8 @@
 
 
         @include media(md) {
+            width: 491px;
+            height: 45px;
             font-size: 34px;
             line-height: 132%;
             margin-bottom: 25px;
@@ -34,15 +37,18 @@
             text-align: center;
             margin-right: 5px;
         }
+
     }
 
     .hero__text {
         font-size: 14px;
         text-align: center;
         color: getColor(secondary);
+        margin: 0 auto;
         margin-bottom: 35px;
 
         @include media(md) {
+            width: 491px;
             font-size: 16px;
         }
     }
