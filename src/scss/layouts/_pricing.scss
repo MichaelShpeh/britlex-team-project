@@ -27,8 +27,7 @@
         font-size: 24px;
         line-height: 3.33;
         color: getColor('dark');
-        align-items: center;
-        text-align: center;
+        @include AIcenTAcen;
         margin-bottom: 49px;
 
         @include media('md') {
@@ -56,69 +55,122 @@
         }
     }
 
-    &-list {
-        display: flex;
-        flex-direction: column;
-        gap: 70px;
 
-        // justify-content: center;
+    &-list {
+        @include flex(col, false, false);
+        gap: 70px;
 
         @include media('md') {}
 
-        @include media('lg') {}
+        @include media('lg') {
+            @include flex(row, true, true)
+        }
 
         @include media('xl') {}
 
         @include media('xxl') {}
 
-
         &__item {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
 
-            &--titel {
-                // font-weight: 600;
-                font-size: 18px;
-                line-height: 1.56%;
-                margin-top: 28px;
-                margin-bottom: 17px;
-                color: getColor('primary');
+            @include flexJCcenFDcolAIcenTAcen;
+
+            &--first::before {
+                content: '';
+                display: flex;
+                background-image: url(../images/pricing-first-sm.svg);
+                background-size: 248px 248px;
+                width: 248px;
+                height: 248px;
 
                 @include media('md') {
-                    font-size: 24px;
-                    line-height: 1.17;
+                    background-size: 291px 291px;
+                    width: 291px;
+                    height: 291px;
                 }
 
-                @include media('lg') {}
+                @include media('lg') {
+                    background-size: 197px 197px;
+                    width: 197px;
+                    height: 197px;
+                }
 
-                @include media('xl') {}
+                @include media('xl') {
+                    background-size: 222px 222px;
+                    width: 222px;
+                    height: 222px;
+                }
 
-                @include media('xxl') {}
+                @include media('xxl') {
+                    background-size: 311px 311px;
+                    width: 311px;
+                    height: 311px;
+                }
             }
 
-            &--text {
-                // font-weight: 400;
-                font-size: 13px;
-                width: 278px;
-                margin-bottom: 33px;
-                text-align: center;
-                color: getColor('secondary');
+            &--second::before {
+                content: '';
+                display: flex;
+                background-image: url(../images/pricing-second-sm.svg);
+                background-size: 257px 197px;
+                width: 257px;
+                height: 197px;
 
                 @include media('md') {
-                    font-size: 14px;
-                    width: 380px;
-                    // min-width: 350px;
-                    // max-width: 400px;
+                    background-size: 314px 241px;
+                    width: 314px;
+                    height: 241px;
                 }
 
-                @include media('lg') {}
+                @include media('lg') {
+                    background-size: 219px 168px;
+                    width: 219px;
+                    height: 168px;
+                }
 
-                @include media('xl') {}
+                @include media('xl') {
+                    background-size: 267px 195px;
+                    width: 267px;
+                    height: 195px;
+                }
 
-                @include media('xxl') {}
+                @include media('xxl') {
+                    background-size: 391px 283px;
+                    width: 341px;
+                    height: 283px;
+                }
+            }
+
+            &--third::before {
+                content: '';
+                display: flex;
+                background-image: url(../images/pricing-third-sm.svg);
+                background-size: 241px 241px;
+                width: 241px;
+                height: 241px;
+
+                @include media('md') {
+                    background-size: 253px 253px;
+                    width: 253px;
+                    height: 253px;
+                }
+
+                @include media('lg') {
+                    background-size: 210px 210px;
+                    width: 210px;
+                    height: 210px;
+                }
+
+                @include media('xl') {
+                    background-size: 242px 242px;
+                    width: 242px;
+                    height: 242px;
+                }
+
+                @include media('xxl') {
+                    background-size: 340px 340px;
+                    width: 340px;
+                    height: 340px;
+                }
             }
 
             &--btn {
@@ -126,10 +178,7 @@
                 font-weight: 400;
                 font-size: 14px;
                 background-color: getColor('pricing-btn');
-                display: flex;
-                justify-content: center;
-                justify-content: space-between;
-                align-items: center;
+                @include flexJCcenJCsbAIcen;
                 padding-left: 12px;
                 padding-right: 15px;
                 width: 170px;
@@ -152,14 +201,14 @@
 
                 &--span {
                     font-weight: 400;
-                    width: 90px;
+                    // width: 90px;
                     height: 27px;
                     font-size: 18px;
                     color: getColor('primary');
 
                     @include media('md') {
                         display: block;
-                        font-size: 24px;
+                        font-size: 22px;
                         height: 36px;
                         width: 90px;
                     }
@@ -170,6 +219,169 @@
 
                     @include media('xxl') {}
                 }
+            }
+        }
+
+        &__titel {
+            // font-weight: 600;
+            font-size: 18px;
+            line-height: 1.56%;
+            margin-top: 28px;
+            margin-bottom: 17px;
+            color: getColor('primary');
+
+            // @include media('md') {
+            //     // font-size: 24px;
+            //     line-height: 1.17;
+            // }
+
+            // @include media('lg') {
+            //     width: 177px;
+            //     height: 56px;
+            //     font-size: 20px;
+            //     line-height: 1.40;
+            //     text-align: left;
+            // }
+
+            // @include media('xl') {}
+
+            // @include media('xxl') {}
+
+            &--first{
+                @include media('md') {
+                    font-size: 24px;
+                    line-height: 1.17;
+                }
+    
+                @include media('lg') {
+                    width: 177px;
+                    font-size: 20px;
+                    height: 56px;
+                    line-height: 1.40;
+                    text-align: left;
+                }
+    
+                @include media('xl') {}
+    
+                @include media('xxl') {}
+            }
+
+            &--second{
+                @include media('md') {
+                    font-size: 24px;
+                    line-height: 1.17;
+                }
+    
+                @include media('lg') {
+                    width: 112px;
+                    height: 56px;
+                    font-size: 20px;
+                    line-height: 1.40;
+                    text-align: left;
+
+                }
+    
+                @include media('xl') {}
+    
+                @include media('xxl') {}
+            }
+
+            &--third{
+                @include media('md') {
+                    font-size: 24px;
+                    line-height: 1.17;
+                }
+    
+                @include media('lg') {
+                    font-size: 20px;
+                    width: 94px;
+                    height: 56px;
+                    line-height: 1.40;
+                    text-align: left;
+
+                }
+    
+                @include media('xl') {}
+    
+                @include media('xxl') {}
+            }
+        }
+
+        &__text {
+            // font-weight: 400;
+            font-size: 13px;
+            width: 278px;
+            margin-bottom: 33px;
+            text-align: center;
+            color: getColor('secondary');
+
+            @include media('md') {
+                font-size: 14px;
+            }
+
+            @include media('lg') {
+                text-align: left;
+            }
+
+            @include media('xl') {}
+
+            @include media('xxl') {}
+
+            &--first{
+
+                @include media('md') {
+                    font-size: 14px;
+                    width: 392px;
+                    // min-width: 350px;
+                    // max-width: 400px;
+                }
+    
+                @include media('lg') {
+                    width: 194px;
+                    height: 87px;
+                }
+    
+                @include media('xl') {
+                    width: 291px;
+                }
+    
+                @include media('xxl') {}
+            }
+
+            &--second{
+                @include media('md') {
+                    font-size: 14px;
+                    width: 332px;
+                    // min-width: 350px;
+                    // max-width: 400px;
+                }
+    
+                @include media('lg') {
+                    width: 211px;
+                    height: 57px;
+                }
+    
+                @include media('xl') {}
+    
+                @include media('xxl') {}
+            }
+
+            &--third{
+                @include media('md') {
+                    font-size: 14px;
+                    width: 362px;
+                    // min-width: 350px;
+                    // max-width: 400px;
+                }
+    
+                @include media('lg') {
+                    width: 227px;
+                    height: 63px;
+                }
+    
+                @include media('xl') {}
+    
+                @include media('xxl') {}
             }
         }
     }

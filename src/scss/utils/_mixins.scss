@@ -78,3 +78,23 @@
 	line-height: $lh;
 }
 
+@mixin flexJCcenFDcolAIcenTAcen{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+@mixin flexJCcenJCsbAIcen{
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin AIcenTAcen{
+	align-items: center;
+	text-align: center;
+}
+
