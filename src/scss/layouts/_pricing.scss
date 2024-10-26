@@ -28,29 +28,23 @@
         line-height: 3.33;
         color: getColor('dark');
         @include AIcenTAcen;
+        @include sectionTitel;
         margin-bottom: 49px;
 
+
         @include media('md') {
-            font-size: 30px;
-            line-height: 2.67;
             margin-bottom: 54px;
         }
 
         @include media('lg') {
-            // font-size: 36px;
-            // line-height: 2.22;
             margin-bottom: 61px;
         }
 
         @include media('xl') {
-            font-size: 36px;
-            line-height: 2.22;
             margin-bottom: 47px;
         }
 
         @include media('xxl') {
-            font-size: 48px;
-            line-height: 1.67px;
             margin-bottom: 83px;
         }
     }

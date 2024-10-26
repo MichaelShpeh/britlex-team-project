@@ -104,3 +104,25 @@
 	text-align: center;
 }
 
+@mixin sectionTitel($size: 24px, $weight: 600, $lh: 3.33, $color: #000,){
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $lh;
+	color: $color;
+	@include media(md){
+		font-size: 30px;
+		line-height: 2.67;
+	}
+
+	@include media(xl){
+		font-size: 36px;
+		line-height: 2.22;
+	}
+
+	@include media(xxl){
+		font-size: 48px;
+		line-height: 1.67;
+	}
+}
+
+
