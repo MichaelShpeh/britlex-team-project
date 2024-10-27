@@ -8,10 +8,7 @@
         @include flex(col, true, false);
 
         .about__title {
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 333%;
-            color: getColor(dark);
+            @include sectionTitel();
             display: flex;
             flex-direction: column;
             @include flex(col, false, false);
@@ -30,8 +27,6 @@
             }
 
             @include media(md) {
-                font-size: 30px;
-                line-height: 267%;
                 gap: 23px;
                 &::after {
                     width: 352px;
@@ -54,9 +49,6 @@
             }
 
             @include media(xl) {
-                font-size: 36px;
-                line-height: normal;
-                margin-bottom: 20px;
                 &::after {
                     width: 336px;
                     height: 336px;
@@ -65,9 +57,6 @@
             }
 
             @include media(xxl) {
-                font-size: 48px;
-                line-height: 167%;
-                margin-bottom: 30px;
                 &::after {
                     width: 500px;
                     height: 500px;
