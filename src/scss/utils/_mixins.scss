@@ -1,100 +1,133 @@
 @mixin media($breakpoint) {
-	@if $breakpoint =='sm' {
+	@if $breakpoint == 'sm' {
 		@media screen and (min-width: 320px) {
 			@content;
 		}
-	}
-
-	@else if $breakpoint =='sm-max' {
+	} @else if $breakpoint == 'sm-max' {
 		@media screen and (max-width: 574px) {
-			@content
+			@content;
 		}
-	}
-
-	@else if $breakpoint =='md' {
+	} @else if $breakpoint == 'md' {
 		@media screen and (min-width: 575px) {
 			@content;
 		}
-	}
-
-	@else if $breakpoint =='lg' {
+	} @else if $breakpoint == 'md-max' {
+		@media screen and (max-width: 575px) {
+			@content;
+		}
+	} @else if $breakpoint == 'lg' {
 		@media screen and (min-width: 767px) {
 			@content;
 		}
-	}
-
-	@else if $breakpoint =='xl' {
+	} @else if $breakpoint == 'lg-max' {
+		@media screen and (max-width: 767px) {
+			@content;
+		}
+	} @else if $breakpoint == 'xl' {
 		@media screen and (min-width: 992px) {
 			@content;
 		}
-	}
-
-	@else if $breakpoint =='xxl' {
+	} @else if $breakpoint == 'xl-max' {
+		@media screen and (max-width: 992px) {
+			@content;
+		}
+	} @else if $breakpoint == 'xxl' {
 		@media screen and (min-width: 1600px) {
+			@content;
+		}
+	} @else if $breakpoint == 'xxl-max' {
+		@media screen and (max-width: 1600px) {
 			@content;
 		}
 	}
 }
-
 @mixin flex($property: row, $center: false, $beetween: false) {
 	display: flex;
 
-	@if $property ==row {
+	@if $property == row {
 		flex-direction: row;
-	}
-
-	@else if $property ==col {
+	} @else if $property == col {
 		flex-direction: column;
 	}
-
-	@if $center ==true {
+	@if $center == true {
 		justify-content: center;
 		align-items: center;
 	}
-
-	@if $beetween ==true {
+	@if $beetween == true {
 		justify-content: space-between;
 	}
 }
-
 @mixin transition($property) {
 	transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 //! ----------- 01.Міксін outline -----------
 //todo var.1
 // @mixin outline($size: 1px, $type: solid, $color) {
 //     outline: $size $type $color;
 // }
-
 //todo var.2
 @mixin outline($size: 1px, $type: solid, $color: tomato) {
 	outline: $size $type $color;
 }
-
-@mixin title($size: 18px, $weight: 600, $lh: 0) {
+@mixin sectionTitle($size: 24px, $weight: 600, $lheight: 80px) {
 	font-size: $size;
 	font-weight: $weight;
-	line-height: $lh;
-}
+	line-height: $lheight;
+	color: #000000;
 
-@mixin flexJCcenFDcolAIcenTAcen{
+	@include media(md) {
+		font-size: 30px;
+	}
+
+	@include media(xl) {
+		font-size: 36px;
+	}
+
+	@include media(xxl) {
+		font-size: 48px;
+	}
+}
+@mixin mainBtn(
+	$size: 14px,
+	$lheight: 21px,
+	$weight: 500,
+	$width: 100%,
+	$height: 60px,
+	$py: 14px,
+	$px: 43px,
+	$rounded: 5px
+) {
+	font-size: $size;
+	line-height: $lheight;
+	font-weight: $weight;
+	width: $width;
+	height: $height;
+	border-radius: $rounded;
+	background-color: getColor(primary);
+	padding: $py $px;
+	color: #ffffff;
+
+	@include transition(background-color);
+
+	&:hover,
+	&:focus {
+		background-color: getColor(hover);
+	}
+}
+@mixin flexJCcenFDcolAIcenTAcen {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
-
-@mixin flexJCcenJCsbAIcen{
+@mixin flexJCcenJCsbAIcen {
 	display: flex;
 	justify-content: center;
 	justify-content: space-between;
 	align-items: center;
 }
-
-@mixin AIcenTAcen{
+@mixin AIcenTAcen {
 	align-items: center;
 	text-align: center;
 }
-
