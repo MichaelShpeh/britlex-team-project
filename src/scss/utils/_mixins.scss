@@ -104,7 +104,8 @@
 	text-align: center;
 }
 
-@mixin sectionTitel($size: 24px, $weight: 600, $lh: 3.33, $color: #000,){
+
+@mixin sectionTitle($size: 24px, $weight: 600, $lh: 3.33, $color: #000,){
 	font-size: $size;
 	font-weight: $weight;
 	line-height: $lh;
