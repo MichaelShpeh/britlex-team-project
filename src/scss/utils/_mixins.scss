@@ -1,36 +1,26 @@
 @mixin media($breakpoint) {
-	@if $breakpoint =='sm' {
-		@media screen and (min-width: 320px) {
+	@if $breakpoint == 'sm' {
+		@media screen and (min-width: getBreakPoint('sm')) {
 			@content;
 		}
-	}
-
-	@else if $breakpoint =='sm-max' {
-		@media screen and (max-width: 574px) {
-			@content
-		}
-	}
-
-	@else if $breakpoint =='md' {
-		@media screen and (min-width: 575px) {
+	} @else if $breakpoint == 'sm-max' {
+		@media screen and (max-width: getBreakPoint('md')) {
 			@content;
 		}
-	}
-
-	@else if $breakpoint =='lg' {
-		@media screen and (min-width: 767px) {
+	} @else if $breakpoint == 'md' {
+		@media screen and (min-width: getBreakPoint('md')) {
 			@content;
 		}
-	}
-
-	@else if $breakpoint =='xl' {
-		@media screen and (min-width: 992px) {
+	} @else if $breakpoint == 'lg' {
+		@media screen and (min-width: getBreakPoint('lg')) {
 			@content;
 		}
-	}
-
-	@else if $breakpoint =='xxl' {
-		@media screen and (min-width: 1600px) {
+	} @else if $breakpoint == 'xl' {
+		@media screen and (min-width: getBreakPoint('xl')) {
+			@content;
+		}
+	} @else if $breakpoint == 'xxl' {
+		@media screen and (min-width: getBreakPoint('xxl')) {
 			@content;
 		}
 	}
@@ -38,21 +28,17 @@
 
 @mixin flex($property: row, $center: false, $beetween: false) {
 	display: flex;
-
-	@if $property ==row {
+	@if $property == row {
 		flex-direction: row;
-	}
-
-	@else if $property ==col {
+	} @else if $property == col {
 		flex-direction: column;
 	}
-
-	@if $center ==true {
+	@if $center == true {
 		justify-content: center;
 		align-items: center;
 	}
 
-	@if $beetween ==true {
+	@if $beetween == true {
 		justify-content: space-between;
 	}
 }
@@ -78,7 +64,7 @@
 	line-height: $lh;
 }
 
-@mixin flexJCcenFDcolAIcenTAcen{
+@mixin flexJCcenFDcolAIcenTAcen {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -86,44 +72,41 @@
 	text-align: center;
 }
 
-@mixin flexJCcenJCsbAIcen{
+@mixin flexJCcenJCsbAIcen {
 	display: flex;
 	justify-content: center;
 	justify-content: space-between;
 	align-items: center;
 }
-@mixin flexJCcenFDcolAIcen{
+@mixin flexJCcenFDcolAIcen {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 }
 
-@mixin AIcenTAcen{
+@mixin AIcenTAcen {
 	align-items: center;
 	text-align: center;
 }
 
-
-@mixin sectionTitle($size: 24px, $weight: 600, $lh: 3.33, $color: #000,){
+@mixin sectionTitle($size: 24px, $weight: 600, $lh: 3.33, $color: #000) {
 	font-size: $size;
 	font-weight: $weight;
 	line-height: $lh;
 	color: $color;
-	@include media(md){
+	@include media(md) {
 		font-size: 30px;
 		line-height: 2.67;
 	}
 
-	@include media(xl){
+	@include media(xl) {
 		font-size: 36px;
 		line-height: 2.22;
 	}
 
-	@include media(xxl){
+	@include media(xxl) {
 		font-size: 48px;
 		line-height: 1.67;
 	}
 }
-
-
