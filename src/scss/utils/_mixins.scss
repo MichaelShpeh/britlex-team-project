@@ -1,26 +1,26 @@
 @mixin media($breakpoint) {
 	@if $breakpoint == 'sm' {
-		@media screen and (min-width: getBreakPoint(sm)) {
+		@media screen and (min-width: getBreakPoint('sm')) {
 			@content;
 		}
 	} @else if $breakpoint == 'sm-max' {
-		@media screen and (max-width: getBreakPoint(md)) {
+		@media screen and (max-width: getBreakPoint('md')) {
 			@content;
 		}
 	} @else if $breakpoint == 'md' {
-		@media screen and (min-width: getBreakPoint(md)) {
+		@media screen and (min-width: getBreakPoint('md')) {
 			@content;
 		}
 	} @else if $breakpoint == 'lg' {
-		@media screen and (min-width: getBreakPoint(lg)) {
+		@media screen and (min-width: getBreakPoint('lg')) {
 			@content;
 		}
 	} @else if $breakpoint == 'xl' {
-		@media screen and (min-width: getBreakPoint(xl)) {
+		@media screen and (min-width: getBreakPoint('xl')) {
 			@content;
 		}
 	} @else if $breakpoint == 'xxl' {
-		@media screen and (min-width: getBreakPoint(xxl)) {
+		@media screen and (min-width: getBreakPoint('xxl')) {
 			@content;
 		}
 	}

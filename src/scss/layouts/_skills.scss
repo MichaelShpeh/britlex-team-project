@@ -346,7 +346,7 @@
 			}
 
 			&-title {
-				color: getColor(primary);
+				color: getColor('primary');
 				font-size: 18px;
 				font-weight: 600;
 				margin-top: 20px;
@@ -366,7 +366,7 @@
 				display: block;
 				font-size: 13px;
 				line-height: 18px;
-				color: getColor(secondary);
+				color: getColor('secondary');
 
 				@include media(md) {
 					margin-bottom: 130px;
@@ -467,7 +467,7 @@
 			}
 
 			&-btn {
-				background-color: getColor(primary);
+				background-color: getColor('primary');
 				margin-top: 20px;
 				color: #ffffff;
 				padding: 14px 42px;
@@ -479,7 +479,7 @@
 
 				&:hover,
 				&:focus {
-					background-color: getColor(hover);
+					background-color: getColor('hover');
 				}
 
 				@include media(md) {
