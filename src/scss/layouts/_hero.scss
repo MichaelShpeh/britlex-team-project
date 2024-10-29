@@ -1,11 +1,62 @@
 .hero {
-    height: 616px;
     background-color: #cafbffb6;
     padding-bottom: 50px;
 
     @include media(md) {
-        height: 768px;
         padding-bottom: 100px;
+    }
+
+    @include media(lg) {
+        height: 413px;
+    }
+
+    .container {
+
+
+        @include media(lg) {
+            height: 413px;
+            display: flex;
+            position: relative;
+        }
+    }
+
+    .container::before {
+        width: 299px;
+        height: 299px;
+        content: '';
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        background-image: url(../images/hero-sm.svg);
+
+
+        @include media(md) {
+            width: 424px;
+            height: 424px;
+            margin-bottom: 16px;
+            background-image: url(../images/hero-md.svg);
+        }
+
+        @include media(lg) {
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-image: url(../images/hero-lg.svg);
+        }
+
+        @include media(xl) {
+            width: 460px;
+            height: 460px;
+            background-image: url(../images/hero-xl.svg);
+        }
+
+        @include media(xxl) {
+            width: 660px;
+            height: 660px;
+            background-image: url(../images/hero.svg);
+        }
     }
 
     .hero__title {
@@ -29,11 +80,53 @@
             margin-bottom: 25px;
         }
 
+        @include media(lg) {
+            width: 217px;
+            height: 135px;
+            font-size: 36px;
+            line-height: 125%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+    }
+
+    .hero__title::after {
+        content: '';
+        outline: #000 solid 1px;
+        rotate: 38%;
+        background-size: cover;
+        background-image: url(../images/hero-lamp.svg);
+
+        @include media(sm) {
+            display: none;
+        }
+
+
+        @include media(lg) {
+            width: 51px;
+            height: 51px;
+            display: block;
+            position: absolute;
+            top: 66px;
+            left: 227px;
+        }
+
+        @include media(xl) {
+            width: 60px;
+            height: 60px;
+        }
+
+        @include media(xxl) {
+            width: 85px;
+            height: 85px;
+        }
     }
 
     .hero__span {
 
-        @include media(sm-max) {
+        @media screen and (max-width:574px) {
             text-align: center;
             margin-right: 5px;
         }
@@ -52,7 +145,17 @@
         @include media(md) {
             width: 491px;
             font-size: 16px;
+            margin-bottom: 20px;
         }
+
+        @include media(lg) {
+            width: 335px;
+            height: 72px;
+            position: absolute;
+            top: 160px;
+            left: 0px;
+        }
+
     }
 
     .hero__button {
@@ -71,76 +174,10 @@
             width: 305px;
             height: 75px;
             font-size: 18px;
+            position: absolute;
+            left: 0px;
+            top: 260px;
         }
     }
 
-    .hero__container::before {
-        width: 299px;
-        height: 299px;
-        content: '';
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 16px;
-        background-image: url(../images/hero-sm.svg);
-
-
-        @include media(md) {
-            width: 424px;
-            height: 424px;
-            margin-bottom: 17px;
-            background-image: url(../images/hero-md.svg);
-        }
-
-        @include media(lg) {
-            width: 350px;
-            height: 350px;
-            background-image: url(../images/hero-lg.svg);
-        }
-
-        @include media(xl) {
-            width: 460px;
-            height: 460px;
-            background-image: url(../images/hero-xl.svg);
-        }
-
-        @include media(xxl) {
-            width: 660px;
-            height: 660px;
-            background-image: url(../images/hero.svg);
-        }
-    }
-
-
-
-}
-
-.hero__title::after {
-    content: '';
-    outline: #000 solid 1px;
-    rotate: 38%;
-    padding-bottom: 15px;
-
-    @include media(sm) {
-        display: none;
-    }
-
-
-    @include media(lg) {
-        width: 51px;
-        height: 51px;
-        display: block;
-        background-image: url(../images/hero-lg.svg);
-    }
-
-    @include media(xl) {
-        width: 60px;
-        height: 60px;
-        background-image: url(../images/hero-xl.svg);
-    }
-
-    @include media(xxl) {
-        width: 85px;
-        height: 85px;
-        background-image: url(../images/hero-xxl.svg);
-    }
 }
