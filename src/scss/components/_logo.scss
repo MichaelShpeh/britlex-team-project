@@ -1,14 +1,14 @@
-.footer-header__link{
+.logo{
     font-weight: 400;
     font-size: 24px;
     color: getColor('dark');
-    @include media(md){
+    @include media("md"){
         font-size: 30px;
     }
-    @include media(xxl){
+    @include media("xxl"){
         font-size: 36px;
     }
 }
-.header-nav__span,.footer-container__span{
+.logo__span{
     color: getColor('secondary');
 }
