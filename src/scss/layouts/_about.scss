@@ -87,6 +87,106 @@
 				display: none;
 			}
 
+    padding-bottom: 84px;
+    background-color: #e0e0e0;
+
+	@include media(md) {
+        padding-bottom: 130px;
+    }
+
+    @include media(lg) {
+        padding-bottom: 88px;
+    }
+
+    @include media(xl) {
+        padding-bottom: 119px;
+    }
+
+    @include media(xxl) {
+        padding-top: 30px;
+        padding-bottom: 210px;
+    }
+
+    .container {
+        padding: 0 10px;
+        @include flex(col, true, false);
+
+        @include media(lg) {
+			position: relative;
+			align-items: normal;
+		}
+
+        .about__title {
+            @include sectionTitle();
+            @include flex(col, false, false);
+            gap: 24px;
+            margin-bottom: 27px;
+            text-align: center;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 283px;
+                height: 283px;
+                background-image: url(../images/about-us-sm.svg);
+                // background-color: rgb(205, 237, 255);
+                border-radius: 10px;
+            }
+
+            @include media(md) {
+                gap: 23px;
+                &::after {
+                    width: 352px;
+                    height: 352px;
+                    background-image: url(../images/about-us-md.svg);
+                }
+            }
+
+            @include media(lg) {
+                text-align: left;
+                &::after {
+                    width: 295px;
+                    height: 295px;
+                    background-image: url(../images/about-us-lg.svg);
+                    position: absolute;
+                    top: 36px;
+                    right: 35px;
+                }
+            }
+
+            @include media(xl) {
+                margin-bottom: 20px;
+                &::after {
+                    width: 336px;
+                    height: 336px;
+                    background-image: url(../images/about-us-xl.svg);
+                }
+            }
+
+            @include media(xxl) {
+                margin-bottom: 30px;
+                &::after {
+                    width: 500px;
+                    height: 500px;
+                    background-image: url(../images/about-us-xxl.svg);
+                    top: -30px;
+                }
+            }
+        }
+
+        .about__text {
+            font-weight: 400;
+            font-size: 13px;
+            text-align: center;
+            color: getColor(secondary);
+            margin-bottom: 35px;
+            width: 295px;
+
+			.xl-br{
+				display: none;
+			}
+
+
 			@include media('md') {
 				font-size: 14px;
 				width: 496px;
@@ -95,6 +195,7 @@
 				.sm-br {
 					display: none;
 				}
+
 				.md-br {
 					display: block;
 				}
@@ -108,6 +209,12 @@
 					display: none;
 				}
 			}
+
+				.xl-br{
+					display: none;
+				}
+            }
+
 
 			@include media('lg') {
 				text-align: left;
@@ -117,6 +224,7 @@
 				.sm-br {
 					display: none;
 				}
+
 				.md-br {
 					display: none;
 				}
@@ -130,6 +238,12 @@
 					display: none;
 				}
 			}
+
+				.xl-br{
+					display: none;
+				}
+            }
+
 
 			@include media('xl') {
 				font-size: 16px;
@@ -139,6 +253,7 @@
 				.sm-br {
 					display: none;
 				}
+
 				.md-br {
 					display: none;
 				}
@@ -152,6 +267,12 @@
 					display: none;
 				}
 			}
+
+				.xl-br{
+					display: block;
+				}
+            }
+
 
 			@include media('xxl') {
 				font-size: 20px;
@@ -262,4 +383,77 @@
 		padding-top: 30px;
 		padding-bottom: 210px;
 	}
+
+				.xl-br{
+					display: none;
+				}
+            }
+        }
+
+        .about-list {
+            @include flex(col, true, false);
+            gap: 47px;
+
+            @include media(md) {
+                width: 425px;
+                @include flex(row, false, true);
+            }
+
+            @include media(lg) {
+                text-wrap: nowrap;
+                justify-content: start;
+                gap: 32px;
+            }
+
+            @include media(xl) {
+                width: 400px;
+            }
+
+            @include media(xxl) {
+                width: 610px;
+                justify-content: space-between;
+            }
+
+            .about-list__item {
+                @include flex(col, true, false);
+
+                @include media(md) {
+                    gap: 2px;
+                }
+
+                @include media(xl) {
+                    gap: 10px;
+                }
+
+                .about-list__number {
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: getColor(primary);
+
+                    @include media(xl) {
+                        font-size: 30px;
+                    }
+
+                    @include media(xxl) {
+                        font-size: 48px;
+                    }
+                }
+
+                .about-list__description {
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: getColor(secondary);
+
+                    @include media(xl) {
+                        font-size: 16px;
+                    }
+
+                    @include media(xxl) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
 }
