@@ -37,11 +37,11 @@
         }
 
         @include media('lg') {
-            margin-bottom: 61px;
+            margin-bottom: 26px;
         }
 
         @include media('xl') {
-            margin-bottom: 47px;
+            margin-bottom: 22px;
         }
 
         @include media('xxl') {
@@ -253,6 +253,8 @@
                     height: 56px;
                     line-height: 1.40;
                     text-align: left;
+                    margin-top: 23px;
+                    margin-bottom: 15px;
                 }
     
                 @include media('xl') {}
@@ -272,6 +274,8 @@
                     font-size: 20px;
                     line-height: 1.40;
                     text-align: left;
+                    margin-top: 23px;
+                    margin-bottom: 14px;
 
                 }
     
@@ -292,6 +296,8 @@
                     height: 56px;
                     line-height: 1.40;
                     text-align: left;
+                    margin-top: 15px;
+                    margin-bottom: 9px;
 
                 }
     
@@ -333,6 +339,7 @@
                 @include media('lg') {
                     width: 194px;
                     height: 87px;
+                    margin-bottom: 23px;
                 }
     
                 @include media('xl') {
@@ -353,6 +360,8 @@
                 @include media('lg') {
                     width: 211px;
                     height: 57px;
+
+                    margin-bottom: 44px;
                 }
     
                 @include media('xl') {}
