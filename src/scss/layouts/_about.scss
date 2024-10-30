@@ -20,12 +20,21 @@
     }
 
     .container {
-        padding: 0 10px;
+        padding: 0 15px;
         @include flex(col, true, false);
 
+        @include media(md) {
+            padding: 0 40px;
+		}
         @include media(lg) {
 			position: relative;
 			align-items: normal;
+		}
+        @include media(xl) {
+            padding: 0 30px;
+		}
+        @include media(xxl) {
+            padding: 0 130px;
 		}
 
         .about__title {
