@@ -2,14 +2,34 @@
     padding-bottom: 84px;
     background-color: #e0e0e0;
 
+	@include media(md) {
+        padding-bottom: 130px;
+    }
+
+    @include media(lg) {
+        padding-bottom: 88px;
+    }
+
+    @include media(xl) {
+        padding-bottom: 119px;
+    }
+
+    @include media(xxl) {
+        padding-top: 30px;
+        padding-bottom: 210px;
+    }
+
     .container {
         padding: 0 10px;
         @include flex(col, true, false);
 
+        @include media(lg) {
+			position: relative;
+			align-items: normal;
+		}
+
         .about__title {
             @include sectionTitle();
-            display: flex;
-            flex-direction: column;
             @include flex(col, false, false);
             gap: 24px;
             margin-bottom: 27px;
@@ -74,16 +94,7 @@
             margin-bottom: 35px;
             width: 295px;
 
-			.md-br{
-				display: none;
-			}
-			.lg-br{
-				display: none;
-			}
 			.xl-br{
-				display: none;
-			}
-			.xxl-br{
 				display: none;
 			}
 
@@ -95,16 +106,7 @@
 				.sm-br{
 					display: none;
 				}
-				.md-br{
-					display: block;
-				}
-				.lg-br{
-					display: none;
-				}
 				.xl-br{
-					display: none;
-				}
-				.xxl-br{
 					display: none;
 				}
             }
@@ -117,16 +119,7 @@
 				.sm-br{
 					display: none;
 				}
-				.md-br{
-					display: none;
-				}
-				.lg-br{
-					display: block;
-				}
 				.xl-br{
-					display: none;
-				}
-				.xxl-br{
 					display: none;
 				}
             }
@@ -139,17 +132,8 @@
 				.sm-br{
 					display: none;
 				}
-				.md-br{
-					display: none;
-				}
-				.lg-br{
-					display: none;
-				}
 				.xl-br{
 					display: block;
-				}
-				.xxl-br{
-					display: none;
 				}
             }
 
@@ -161,17 +145,8 @@
 				.sm-br{
 					display: none;
 				}
-				.md-br{
-					display: none;
-				}
-				.lg-br{
-					display: none;
-				}
 				.xl-br{
 					display: none;
-				}
-				.xxl-br{
-					display: block;
 				}
             }
         }
@@ -240,26 +215,5 @@
                 }
             }
         }
-		@include media(lg) {
-			position: relative;
-			align-items: normal;
-		}
-    }
-
-	@include media(md) {
-        padding-bottom: 130px;
-    }
-
-    @include media(lg) {
-        padding-bottom: 88px;
-    }
-
-    @include media(xl) {
-        padding-bottom: 119px;
-    }
-
-    @include media(xxl) {
-        padding-top: 30px;
-        padding-bottom: 210px;
     }
 }
