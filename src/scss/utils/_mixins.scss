@@ -4,7 +4,7 @@
 			@content;
 		}
 	} @else if $breakpoint == 'sm-max' {
-		@media screen and (max-width: getBreakPoint('md')) {
+		@media screen and (max-width: calc(getBreakPoint('md') - 1px)) {
 			@content;
 		}
 	} @else if $breakpoint == 'md' {
@@ -95,17 +95,17 @@
 	font-weight: $weight;
 	line-height: $lh;
 	color: $color;
-	@include media(md) {
+	@include media('md') {
 		font-size: 30px;
 		line-height: 2.67;
 	}
 
-	@include media(xl) {
+	@include media('xl') {
 		font-size: 36px;
 		line-height: 2.22;
 	}
 
-	@include media(xxl) {
+	@include media('xxl') {
 		font-size: 48px;
 		line-height: 1.67;
 	}
