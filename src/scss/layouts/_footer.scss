@@ -2,82 +2,82 @@
     padding-bottom: 46px;
     padding-top: 84px;
 
-    @include media(md){
+    @include media("md"){
         padding-bottom: 26px;
         padding-top: 169px;
     }
-    @include media(lg){
+    @include media("lg"){
         padding-bottom: 15px;
         padding-top: 131px;
     }
-    @include media(xl){
+    @include media("xl"){
         padding-bottom: 24px;
         padding-top: 180px;
     }
-    @include media(xxl){
+    @include media("xxl"){
         padding-bottom: 64px;
         padding-top: 165px;
     }
 
-    .footer-container{
+    .container{
         @include flex(col, true);
 
-        @include media(md){
+        @include media("md"){
             @include flex(row, false, true);
             margin-left: 30px;
             margin-right: 8px;
         }
-        @include media(xxl){
+        @include media("xxl"){
             margin-left: 20px;
             margin-right: 0px;
         }
 
-        .footer-container__title{
+        &__title{
             margin-bottom: 15px;
 			
-            @include media(md){
+            @include media("md"){
                 margin-bottom: 0px;
                 margin-right: 104px;
             }
-            @include media(lg){
+            @include media("lg"){
                 margin-right:261px
             } 
-            @include media(xl){
+            @include media("xl"){
                 margin-right: 422px;
             }
-            @include media(xxl){
+            @include media("xxl"){
                 margin-right: 550px;
             }
        }
-       .footer-container-list{
+       &-list{
         display: flex;
         margin-left: 13px;
         margin-right: 7px;
 
-        .footer-container-list__link{
+        &__link{
             color: getColor('secondary')
         }
-        .footer-container-list__item{
+        &__item{
             font-weight: 500;
             font-size: 11px;
             position: relative;
 
-            @include media(md){
+            @include media("md"){
                 font-size: 12px;
             }
-            @include media(lg){
+            @include media("lg"){
                 font-size: 13px;
                 font-weight: 400;
             }
-            @include media(xl){
+            @include media("xl"){
                 font-size: 16px;
             }
-            @include media(xxl){
+            @include media("xxl"){
                 font-size: 24px;
             }
         } 
 
-        .footer-container-list__item:not(:last-of-type){
+        &__item:not(:last-of-type){
             margin-right: 14px;
 
             &::before{
@@ -90,11 +90,11 @@
                 left: 105%;
                 top: 35%;
 
-                @include media(xl){
+                @include media("xl"){
                     left: 104%;
                     top: 43%;
                 }
-                @include media(xxl){
+                @include media("xxl"){
                     left: 102%;
                     top: 42%;
                     width: 5px;
