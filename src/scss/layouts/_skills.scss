@@ -2,38 +2,38 @@
 	padding-bottom: 50px;
 	background-color: #d8dbff;
 
-	@include media(md) {
+	@include media('md') {
 		padding-bottom: 84px;
 	}
 
-	@include media(lg) {
+	@include media('lg') {
 		padding-bottom: 52px;
 	}
 
-	@include media(xl) {
+	@include media('xl') {
 		padding-bottom: 106px;
 	}
 
-	@include media(xxl) {
+	@include media('xxl') {
 		padding-bottom: 252px;
 	}
 
 	> div {
 		padding: 0 15px 0 15px;
 
-		@include media(md) {
+		@include media('md') {
 			padding: 0 32px 0 32px;
 		}
 
-		@include media(lg) {
+		@include media('lg') {
 			padding: 0 30px 0 30px;
 		}
 
-		@include media(xl) {
+		@include media('xl') {
 			padding: 0 26px 0 26px;
 		}
 
-		@include media(xxl) {
+		@include media('xxl') {
 			padding: 0 131px 0 131px;
 		}
 	}
@@ -42,19 +42,19 @@
 		@include sectionTitle();
 		text-align: center;
 
-		@include media(md) {
+		@include media('md') {
 			margin-bottom: 34px;
 		}
 
-		@include media(lg) {
+		@include media('lg') {
 			margin-bottom: 36px;
 		}
 
-		@include media(xl) {
+		@include media('xl') {
 			margin-bottom: 53px;
 		}
 
-		@include media(xxl) {
+		@include media('xxl') {
 			margin-bottom: 96px;
 		}
 	}
@@ -66,14 +66,14 @@
 		grid-column-gap: 21px;
 		grid-row-gap: 21px;
 
-		@include media(md) {
+		@include media('md') {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(2, 1fr);
 			grid-column-gap: 30px;
 			grid-row-gap: 30px;
 		}
 
-		@include media(lg) {
+		@include media('lg') {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(2, 0fr);
@@ -81,7 +81,7 @@
 			grid-row-gap: 10px;
 		}
 
-		@include media(xl) {
+		@include media('xl') {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(2, 0fr);
@@ -89,7 +89,7 @@
 			grid-row-gap: 13px;
 		}
 
-		@include media(xxl) {
+		@include media('xxl') {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(2, 0fr);
@@ -104,22 +104,14 @@
 			@include flex(col, true, false);
 			overflow: hidden;
 
-			@include media(md) {
+			@include media('md') {
 				padding-bottom: 36px;
 				height: 534px;
 			}
 
-			@include media(lg) {
+			@include media('lg') {
 				height: auto;
 				justify-content: start;
-			}
-
-			&-wrapper {
-				width: 258px;
-
-				@include media(md) {
-					width: 200px;
-				}
 			}
 
 			&--first {
@@ -134,22 +126,22 @@
 					background-position: center center;
 					background-color: #ededed;
 
-					@include media(md) {
+					@include media('md') {
 						background-size: 185px 185px;
 						height: 191px;
 					}
 
-					@include media(lg) {
+					@include media('lg') {
 						background-size: 214px 214px;
 						height: 214px;
 					}
 
-					@include media(xl) {
+					@include media('xl') {
 						background-size: 260px 260px;
 						height: 260px;
 					}
 
-					@include media(xxl) {
+					@include media('xxl') {
 						background-size: 390px 390px;
 						height: 390px;
 					}
@@ -157,22 +149,22 @@
 
 				height: 600px;
 
-				@include media(md) {
+				@include media('md') {
 					height: 534px;
 				}
 
-				@include media(lg) {
+				@include media('lg') {
 					grid-area: 1 / 1 / 3 / 2;
 
 					padding: 0;
 					height: 662px;
 				}
 
-				@include media(xl) {
+				@include media('xl') {
 					height: 696px;
 				}
 
-				@include media(xxl) {
+				@include media('xxl') {
 					height: 894px;
 				}
 			}
@@ -189,23 +181,23 @@
 					background-position: center center;
 					background-color: #ededed;
 
-					@include media(md) {
+					@include media('md') {
 						background-size: 182px 182px;
 						height: 191px;
 						flex-shrink: 0;
 					}
 
-					@include media(lg) {
+					@include media('lg') {
 						background-size: 200px 200px;
 						height: 200px;
 					}
 
-					@include media(xl) {
+					@include media('xl') {
 						background-size: 205px 205px;
 						height: 205px;
 					}
 
-					@include media(xxl) {
+					@include media('xxl') {
 						background-size: 293px 293px;
 						height: 293px;
 					}
@@ -213,17 +205,17 @@
 
 				height: 473px;
 
-				@include media(md) {
+				@include media('md') {
 					height: 534px;
 				}
 
-				@include media(lg) {
+				@include media('lg') {
 					grid-area: 1 / 2 / 2 / 3;
 					height: 441px;
 					padding: 0;
 				}
 
-				@include media(xxl) {
+				@include media('xxl') {
 					height: 531px;
 				}
 			}
@@ -240,47 +232,45 @@
 					background-position: center center;
 					background-color: #ededed;
 
-					@include media(md) {
+					@include media('md') {
 						background-size: 198px 132px;
 						height: 191px;
 					}
 
-					@include media(lg) {
+					@include media('lg') {
 						background-size: 216px 144px;
-						height: 144px;
+						height: 200px;
 					}
 
-					@include media(xl) {
+					@include media('xl') {
 						background-size: 243px 162px;
-						height: 162px;
+						height: 205px;
 					}
 
-					@include media(xxl) {
+					@include media('xxl') {
 						background-size: 371px 247px;
-						height: 247px;
+						height: 293px;
 					}
 				}
 
 				height: 473px;
 
-				@include media(md) {
+				@include media('md') {
 					height: 534px;
 				}
 
-				@include media(lg) {
+				@include media('lg') {
 					grid-area: 1 / 3 / 2 / 4;
 					padding: 0;
 					height: 441px;
-					padding-top: 40px;
 				}
 
-				@include media(xl) {
+				@include media('xl') {
 					height: 441px;
 				}
 
-				@include media(xxl) {
+				@include media('xxl') {
 					height: 531px;
-					padding-top: 0;
 				}
 			}
 
@@ -297,17 +287,17 @@
 					background-color: #ededed;
 					flex-shrink: 0;
 
-					@include media(md) {
+					@include media('md') {
 						background-size: 206px 137px;
 						height: 191px;
 					}
 
-					@include media(lg) {
+					@include media('lg') {
 						display: none;
 					}
 				}
 
-				@include media(lg) {
+				@include media('lg') {
 					&::after {
 						content: '';
 						display: block;
@@ -316,13 +306,13 @@
 						width: 202px;
 						height: 134px;
 
-						@include media(xl) {
+						@include media('xl') {
 							background-size: 254px 169px;
 							width: 254px;
 							height: 169px;
 						}
 
-						@include media(xxl) {
+						@include media('xxl') {
 							background-size: 382px 255px;
 							width: 382px;
 							height: 255px;
@@ -332,22 +322,22 @@
 
 				height: 473px;
 
-				@include media(md) {
+				@include media('md') {
 					height: 534px;
 				}
 
-				@include media(lg) {
+				@include media('lg') {
 					grid-area: 2 / 2 / 3 / 4;
 					padding: 0 0 26px 22px;
 					flex-direction: row;
 					height: 210px;
 				}
 
-				@include media(xl) {
+				@include media('xl') {
 					height: 241px;
 				}
 
-				@include media(xxl) {
+				@include media('xxl') {
 					height: 343px;
 					justify-content: space-between;
 					padding: 0 25px 26px 22px;
@@ -361,11 +351,17 @@
 				margin-top: 20px;
 				margin-bottom: 20px;
 
-				@include media(lg) {
+				@include media('lg') {
 					font-size: 20px;
+					margin-top: 10px;
+					margin-bottom: 10px;
 				}
 
-				@include media(xxl) {
+				@include media('xl') {
+					margin-bottom: 10px;
+				}
+
+				@include media('xxl') {
 					font-size: 30px;
 				}
 			}
@@ -377,105 +373,134 @@
 				line-height: 18px;
 				color: getColor('secondary');
 
-				@include media(md) {
+				@include media('md') {
 					margin-bottom: 102px;
-					max-width: 180px;
+					max-width: 200px;
 				}
 
-				@include media(lg) {
+				@include media('lg') {
 					margin-bottom: 13px;
 					max-width: 180px;
 				}
 
-				@include media(xxl) {
+				@include media('xxl') {
 					font-size: 16px;
 					line-height: 24px;
 				}
 
 				&--first {
-					> span {
-						display: block;
-					}
-					> span:first-child {
-						margin-bottom: 14px;
+					font-size: 13px;
+					line-height: 19.5px;
 
-						@include media(lg) {
-							margin-bottom: 25px;
-						}
-					}
-
-					@include media(md) {
+					@include media('md') {
 						margin-bottom: 15px;
 						font-size: 12px;
 						line-height: 18px;
 					}
 
-					@include media(lg) {
+					@include media('lg') {
 						font-size: 13px;
 						line-height: 19.5px;
 						max-width: 200px;
 					}
 
-					@include media(xl) {
-						max-width: 250px;
+					@include media('xl') {
+						max-width: 262px;
 						margin-bottom: 30px;
+						font-size: 14px;
+						line-height: 21px;
 					}
 
-					@include media(xxl) {
+					@include media('xxl') {
 						font-size: 16px;
 						line-height: 24px;
-						max-width: 335px;
+						max-width: 347px;
 					}
 				}
 
 				&--second {
 					font-size: 12px;
+					line-height: 18px;
 
-					@include media(lg) {
+					@include media('lg') {
 						max-width: 200px;
+						font-size: 13px;
+						line-height: 19.5px;
 					}
 
-					@include media(xl) {
+					@include media('xl') {
 						max-width: 250px;
+						font-size: 14px;
+						line-height: 21px;
 					}
 
-					@include media(xxl) {
+					@include media('xxl') {
 						max-width: 340px;
+						font-size: 16px;
+						line-height: 24px;
 					}
 				}
 
 				&--third {
-					max-width: 200px;
+					font-size: 13px;
+					line-height: 19.5px;
 
-					@include media(lg) {
+					> .sm-visible {
+						display: inline;
+
+						@include media('md') {
+							display: none;
+						}
+					}
+
+					> .sm-hidden {
+						display: none;
+
+						@include media('md') {
+							display: inline;
+						}
+					}
+
+					@include media('lg') {
 						max-width: 200px;
-						font-size: 13px;
 					}
 
-					@include media(xl) {
+					@include media('xl') {
 						max-width: 250px;
+						font-size: 14px;
+						line-height: 21px;
 					}
 
-					@include media(xxl) {
+					@include media('xxl') {
 						max-width: 340px;
-						font-size: 15px;
+						font-size: 16px;
 						line-height: 24px;
 					}
 				}
 
 				&--fourth {
-					@include media(md) {
+					font-size: 13px;
+					line-height: 19.5px;
+
+					@include media('md') {
 						margin-bottom: 119px;
 						max-width: 200px;
 					}
 
-					@include media(lg) {
+					@include media('lg') {
 						margin-bottom: 13px;
-						max-width: 250px;
+						max-width: 260px;
 					}
 
-					@include media(xxl) {
+					@include media('xl') {
+						font-size: 14px;
+						line-height: 21px;
+					}
+
+					@include media('xxl') {
 						max-width: 335px;
+						font-size: 16px;
+						line-height: 24px;
 					}
 				}
 			}
@@ -498,25 +523,30 @@
 					background-color: getColor('hover');
 				}
 
-				@include media(md) {
+				@include media('md') {
 					margin-top: 0;
-					width: 100%;
+					width: 200px;
 				}
 
-				@include media(lg) {
-					width: auto;
+				@include media('lg') {
+					width: 178px;
+					height: 50px;
 					padding: 14px 43px;
 					line-height: 24px;
 					font-size: 16px;
 					font-weight: 500;
 				}
 
-				@include media(xl) {
+				@include media('xl') {
+					width: 196px;
+					height: 57px;
 					font-size: 18px;
 					line-height: 27px;
 				}
 
-				@include media(xxl) {
+				@include media('xxl') {
+					width: 218px;
+					height: 60px;
 					font-size: 20px;
 					line-height: 30px;
 					margin-top: 0px;

@@ -1,0 +1,47 @@
+.br {
+	&-sm {
+		display: none;
+		display: block;
+		@include media('md') {
+			display: none;
+		}
+	}
+
+	&-md {
+		display: none;
+		@include media('md') {
+			display: block;
+		}
+		@include media('lg') {
+			display: none;
+		}
+	}
+
+	&-lg {
+		display: none;
+		@include media('lg') {
+			display: block;
+		}
+		@include media('xl') {
+			display: none;
+		}
+	}
+
+	&-xl {
+		display: none;
+		@include media('xl') {
+			display: block;
+		}
+
+		@include media('xxl') {
+			display: none;
+		}
+	}
+
+	&-xxl {
+		display: none;
+		@include media('xxl') {
+			display: block;
+		}
+	}
+}

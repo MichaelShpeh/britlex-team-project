@@ -1,19 +1,19 @@
 .contacts {
 	padding: 0 0 57px;
 	background-color: #dcf1ff;
-	@include media(md) {
+	@include media('md') {
 		padding: 0 0 144px;
 	}
-	@include media(lg) {
+	@include media('lg') {
 		padding: 0 0 141px;
 	}
-	@include media(xl) {
+	@include media('xl') {
 		padding: 0 0 194px;
 	}
-	@include media(xxl) {
+	@include media('xxl') {
 		padding: 0 0 220px;
 	}
-	&__flex--container{
+	&__flex--container {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -26,24 +26,24 @@
 		width: 260px;
 		margin-top: 43px;
 		margin: 0 auto;
-		@include media(md) {
+		@include media('md') {
 			font-size: 16px;
 			width: 470px;
 			margin: 0 auto;
 		}
-		@include media(lg) {
+		@include media('lg') {
 			font-size: 14px;
 			text-align: left;
 			width: 400px;
-			
+
 			margin: 0;
 		}
-		@include media(xl) {
+		@include media('xl') {
 			font-size: 16px;
 			text-align: left;
 			width: 400px;
 		}
-		@include media(xxl) {
+		@include media('xxl') {
 			font-size: 20px;
 			text-align: left;
 			width: 550px;
@@ -59,11 +59,10 @@
 		text-align: center;
 		margin-bottom: 32px;
 		// font-weight: 600;
-		@include media(md) {
+		@include media('md') {
 			margin-bottom: 34px;
-
 		}
-		@include media(lg) {
+		@include media('lg') {
 			display: none;
 		}
 	}
@@ -72,36 +71,36 @@
 	// 	justify-content: center;
 	// 	align-items: center;
 	// 	flex-direction: column;
-	// 	@include media(lg) {
+	// 	@include media('lg') {
 	// 		display: block;
 	// 		margin-left: 36px;
 	// 	}
-	// 	@include media(xl) {
+	// 	@include media('xl') {
 	// 		display: block;
 	// 		margin-left: 109px;
 	// 	}
 	// }
 	&__input {
-		border: 1px solid  getColor(secondary);
+		border: 1px solid getColor(secondary);
 		border-radius: 5px;
 		width: 291px;
 		height: 50px;
 		padding-left: 26px;
 		margin-bottom: 17px;
-	font-family: 'Poppins', sans-serif;
+		font-family: 'Poppins', sans-serif;
 
-		@include media(md) {
+		@include media('md') {
 			border-radius: 10px;
 			width: 511px;
 			height: 60px;
 			margin-bottom: 0;
 		}
-		@include media(lg) {
+		@include media('lg') {
 			border-radius: 5px;
 			width: 283px;
 			height: 50px;
 		}
-		@include media(xl) {
+		@include media('xl') {
 			border-radius: 10px;
 			width: 323px;
 			height: 60px;
@@ -110,10 +109,10 @@
 	::placeholder {
 		font-size: 12px;
 		color: #8f95a5;
-		@include media(xl) {
+		@include media('xl') {
 			font-size: 14px;
 		}
-		@include media(xxl) {
+		@include media('xxl') {
 			font-size: 16px;
 		}
 	}
@@ -125,9 +124,9 @@
 		color: getColor(white);
 		font-weight: 500;
 		font-size: 14px;
-	font-family: 'Poppins', sans-serif;
+		font-family: 'Poppins', sans-serif;
 
-		@include media(md) {
+		@include media('md') {
 			position: absolute;
 			width: 193px;
 			height: 60px;
@@ -135,7 +134,7 @@
 			right: 0;
 			font-size: 16px;
 		}
-		@include media(lg) {
+		@include media('lg') {
 			position: static;
 			width: 145px;
 			height: 50px;
@@ -143,7 +142,7 @@
 			margin-left: 6px;
 			font-size: 13px;
 		}
-		@include media(xl) {
+		@include media('xl') {
 			border-radius: 10px;
 			width: 193px;
 			height: 60px;
@@ -157,70 +156,70 @@
 	font-size: 30px;
 	line-height: 267%;
 	font-weight: 600;
-	@include media(lg) {
+	@include media('lg') {
 		display: block;
 	}
-	@include media(xl) {
+	@include media('xl') {
 		font-size: 36px;
 		line-height: 222%;
 	}
-	@include media(xxl) {
+	@include media('xxl') {
 		font-size: 48px;
 		line-height: 167%;
 	}
 }
 .container__flex--contacts {
-	@include media(lg) {
+	@include media('lg') {
 		display: flex;
 	}
 }
 .form {
 	@include flexJCcenFDcolAIcen;
 	margin-top: 43px;
-	@include media(md) {
+	@include media('md') {
 		position: relative;
 		flex-direction: row;
 	}
-	@include media(lg) {
+	@include media('lg') {
 		justify-content: left;
 	}
 }
-.contacts__text::before{
-		content: '';
-		display:block;
-		margin: 0 auto;
-		@include media (sm){
-			width: 253px;
-			height: 228px;
-			background-image: url(../images/contact-us-sm.svg);
+.contacts__text::before {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	@include media('sm') {
+		width: 253px;
+		height: 228px;
+		background-image: url(../images/contact-us-sm.svg);
 	}
-		@include media (md){
-			width: 358px;
-			height: 322px;
-			background-image: url(../images/contact-us-md.svg);
+	@include media('md') {
+		width: 358px;
+		height: 322px;
+		background-image: url(../images/contact-us-md.svg);
 	}
 }
-	@include media (lg){
-		.contacts__text::before{
-			display:none;
-			}
-		}
-.contacts__image::before{
+@include media('lg') {
+	.contacts__text::before {
+		display: none;
+	}
+}
+.contacts__image::before {
 	content: '';
-	display:block;
-	@include media (lg){
+	display: block;
+	@include media('lg') {
 		margin-right: 38px;
 		width: 233px;
 		height: 210px;
 		background-image: url(../images/contact-us-lg.svg);
 	}
-	@include media (xl){
+	@include media('xl') {
 		margin-right: 109px;
 		width: 312px;
 		height: 281px;
 		background-image: url(../images/contact-us-xl.svg);
 	}
-	@include media (xxl){
+	@include media('xxl') {
 		margin-right: 111px;
 		width: 477px;
 		height: 429px;

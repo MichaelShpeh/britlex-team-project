@@ -1,14 +1,14 @@
-.logo{
-    font-weight: 400;
-    font-size: 24px;
-    color: getColor('dark');
-    @include media("md"){
-        font-size: 30px;
-    }
-    @include media("xxl"){
-        font-size: 36px;
-    }
+.logo {
+	font-weight: 400;
+	font-size: 24px;
+	color: getColor('dark');
+	@include media('md') {
+		font-size: 30px;
+	}
+	@include media('xxl') {
+		font-size: 36px;
+	}
 }
-.logo__span{
-    color: getColor('secondary');
+.logo__span {
+	color: getColor('secondary');
 }
