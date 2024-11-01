@@ -81,6 +81,7 @@
             height: 135px;
             font-size: 36px;
             line-height: 125%;
+            text-align: left;
             position: absolute;
             top: 0px;
             left: 0px;
@@ -113,28 +114,22 @@
             height: 60px;
         }
 
-        @include media(lg) {
-            width: 217px;
-            height: 135px;
-            font-size: 36px;
-            line-height: 125%;
-            text-align: left;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-        }
-
-
         @include media('xxl') {
             width: 85px;
             height: 85px;
         }
     }
 
-    .hero__span {
-        @media screen and (max-width: 574px) {
-            text-align: center;
-            margin-right: 5px;
+    .universal-br {
+
+        @media screen and (max-width: getBreakPoint('lg')) {
+            display: none;
+        }
+    }
+
+    .sm-br {
+        @media screen and (min-width: getBreakPoint('md')) {
+            display: none;
         }
     }
 
@@ -156,6 +151,7 @@
         @include media('lg') {
             width: 335px;
             height: 72px;
+            text-align: left;
             position: absolute;
             top: 160px;
             left: 0px;
@@ -166,88 +162,26 @@
         width: 289px;
         height: 60px;
         display: block;
+        color: getColor(light);
         background: #263238;
         border-radius: 5px;
         font-family: 'Poppins';
         font-weight: 500;
         font-size: 16px;
-        color: getColor(light);
         margin: 0 auto;
 
-
-        @include media('md') {
+        @include media(md) {
             width: 305px;
             height: 75px;
             font-size: 18px;
+
+        }
+
+        @media screen and (min-width: getBreakPoint('lg')) {
             position: absolute;
             left: 0px;
             top: 260px;
         }
     }
-}
 
-.universal-br {
-
-    @media screen and (max-width: getBreakPoint('lg')) {
-        display: none;
-    }
-}
-
-.sm-br {
-    @media screen and (min-width: getBreakPoint('md')) {
-        display: none;
-    }
-}
-
-
-.hero__text {
-    width: 295px;
-    height: 63px;
-    font-size: 14px;
-    text-align: center;
-    color: getColor(secondary);
-    margin: 0 auto;
-    margin-bottom: 35px;
-
-    @include media(md) {
-        width: 491px;
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-
-    @include media(lg) {
-        width: 335px;
-        height: 72px;
-        text-align: left;
-        position: absolute;
-        top: 160px;
-        left: 0px;
-    }
-
-}
-
-.hero__button {
-    width: 289px;
-    height: 60px;
-    display: block;
-    background: #263238;
-    border-radius: 5px;
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 16px;
-    color: getColor(white);
-    margin: 0 auto;
-
-    @include media(md) {
-        width: 305px;
-        height: 75px;
-        font-size: 18px;
-
-    }
-
-    @media screen and (min-width: getBreakPoint('lg')) {
-        position: absolute;
-        left: 0px;
-        top: 260px;
-    }
 }
