@@ -10,11 +10,20 @@
         height: 413px;
     }
 
+    @media screen and (min-width: getBreakPoint('xl')) {
+        padding-bottom: 0px;
+        height: 507px;
+    }
+
     .container {
         @include media('lg') {
             height: 413px;
             display: flex;
             position: relative;
+        }
+
+        @media screen and (min-width: getBreakPoint('xl')) {
+            height: 507px;
         }
     }
 
@@ -46,6 +55,8 @@
         @include media('xl') {
             width: 460px;
             height: 460px;
+            top: 0px;
+            right: 0px;
             background-image: url(../images/hero-xl.svg);
         }
 
@@ -86,6 +97,13 @@
             top: 0px;
             left: 0px;
         }
+
+        @media screen and (min-width: getBreakPoint('xl')) {
+            width: 290px;
+            height: 192px;
+            font-size: 48px;
+            line-height: 133%;
+        }
     }
 
     .hero__title::after {
@@ -112,6 +130,8 @@
         @include media('xl') {
             width: 60px;
             height: 60px;
+            top: 103px;
+            left: 302px;
         }
 
         @include media('xxl') {
@@ -156,6 +176,14 @@
             top: 160px;
             left: 0px;
         }
+
+        @media screen and (min-width: getBreakPoint('xl')) {
+            width: 420px;
+            height: 90px;
+            font-size: 20px;
+            top: 220px;
+            left: 0px;
+        }
     }
 
     .hero__button {
@@ -181,6 +209,14 @@
             position: absolute;
             left: 0px;
             top: 260px;
+        }
+
+        @media screen and (min-width: getBreakPoint('xl')) {
+            border-radius: 5px;
+            width: 292px;
+            height: 80px;
+            top: 343px;
+            left: 0px;
         }
     }
 
