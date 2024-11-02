@@ -1,63 +1,62 @@
 .pricing {
-    padding-top: 42px;
-    padding-bottom: 36px;
+
+    
+    background-color: rgb(247, 224, 13);
+    padding-bottom: 72px;
 
     @include media('md') {
-        padding-top: 66px;
-        padding-bottom: 82px;
+        padding-bottom: 163px;
     }
 
     @include media('lg') {
-        padding-top: 44px;
         padding-bottom: 36px;
     }
 
     @include media('xl') {
-        padding-top: 63px;
         padding-bottom: 70px;
     }
 
     @include media('xxl') {
-        padding-top: 115px;
         padding-bottom: 129px;
     }
 
     &__titel {
         // font-weight: 600;
-        font-size: 24px;
-        line-height: 3.33;
         color: getColor('dark');
         @include AIcenTAcen;
         @include sectionTitle;
-        margin-bottom: 49px;
+        // margin-bottom: 49px;
 
 
         @include media('md') {
-            margin-bottom: 54px;
+            // margin-bottom: 54px;
         }
 
         @include media('lg') {
-            margin-bottom: 61px;
+            // margin-bottom: 0px;
         }
 
         @include media('xl') {
-            margin-bottom: 47px;
+            // margin-bottom: 22px;
         }
 
         @include media('xxl') {
-            margin-bottom: 83px;
+            // margin-bottom: 83px;
         }
     }
 
 
     &-list {
         @include flex(col, false, false);
-        gap: 70px;
+        display: flex;
+        flex-direction: column;
+        // gap: 70px;
 
         @include media('md') {}
 
         @include media('lg') {
-            @include flex(row, true, true)
+            @include flex(row, true, true);
+            gap: 0px;
         }
 
         @include media('xl') {}
@@ -76,16 +75,22 @@
                 width: 248px;
                 height: 248px;
 
+                @include media('sm'){
+                    margin-top: 49px;
+                }
+
                 @include media('md') {
                     background-size: 291px 291px;
                     width: 291px;
                     height: 291px;
+                    margin-top: 54px;
                 }
 
                 @include media('lg') {
                     background-size: 197px 197px;
                     width: 197px;
                     height: 197px;
+                    margin-top: 31px;
                 }
 
                 @include media('xl') {
@@ -109,16 +114,22 @@
                 width: 257px;
                 height: 197px;
 
+                @include media('sm'){
+                    margin-top: 63px;
+                }
+
                 @include media('md') {
                     background-size: 314px 241px;
                     width: 314px;
                     height: 241px;
+                    margin-top: 71px;
                 }
 
                 @include media('lg') {
                     background-size: 219px 168px;
                     width: 219px;
                     height: 168px;
+                    margin-top: 61px;
                 }
 
                 @include media('xl') {
@@ -142,16 +153,22 @@
                 width: 241px;
                 height: 241px;
 
+                @include media('sm'){
+                    margin-top: 72px;
+                }
+
                 @include media('md') {
                     background-size: 253px 253px;
                     width: 253px;
                     height: 253px;
+                    margin-top: 71px;
                 }
 
                 @include media('lg') {
                     background-size: 210px 210px;
                     width: 210px;
                     height: 210px;
+                    margin-top: 31px;
                 }
 
                 @include media('xl') {
@@ -220,8 +237,6 @@
             // font-weight: 600;
             font-size: 18px;
             line-height: 1.56%;
-            margin-top: 28px;
-            margin-bottom: 17px;
             color: getColor('primary');
 
             // @include media('md') {
@@ -242,9 +257,13 @@
             // @include media('xxl') {}
 
             &--first{
+                @include media('sm'){
+                    margin-top: 28px;
+                }
                 @include media('md') {
                     font-size: 24px;
                     line-height: 1.17;
+                    margin-top: 29px;
                 }
     
                 @include media('lg') {
@@ -253,6 +272,8 @@
                     height: 56px;
                     line-height: 1.40;
                     text-align: left;
+                    margin-top: 23px;
+                    margin-bottom: 15px;
                 }
     
                 @include media('xl') {}
@@ -261,9 +282,14 @@
             }
 
             &--second{
+                @include media('sm'){
+                    margin-top: 12px;
+                }
+
                 @include media('md') {
                     font-size: 24px;
                     line-height: 1.17;
+                    margin-top: 21px;
                 }
     
                 @include media('lg') {
@@ -272,6 +298,8 @@
                     font-size: 20px;
                     line-height: 1.40;
                     text-align: left;
+                    margin-top: 23px;
+                    margin-bottom: 14px;
 
                 }
     
@@ -281,9 +309,15 @@
             }
 
             &--third{
+
+                @include media('sm'){
+                    margin-top: 7px;
+                }
+
                 @include media('md') {
                     font-size: 24px;
                     line-height: 1.17;
+                    margin-top: 15px;
                 }
     
                 @include media('lg') {
@@ -292,6 +326,8 @@
                     height: 56px;
                     line-height: 1.40;
                     text-align: left;
+                    margin-top: 15px;
+                    margin-bottom: 9px;
 
                 }
     
@@ -305,7 +341,6 @@
             // font-weight: 400;
             font-size: 13px;
             width: 278px;
-            margin-bottom: 33px;
             text-align: center;
             color: getColor('secondary');
 
@@ -323,9 +358,16 @@
 
             &--first{
 
+                @include media('sm'){
+                    margin-top: 17px;
+                    margin-bottom: 33px;
+                }
+
                 @include media('md') {
                     font-size: 14px;
                     width: 392px;
+                    margin-top: 23px;
+                    margin-bottom: 31px;
                     // min-width: 350px;
                     // max-width: 400px;
                 }
@@ -333,6 +375,7 @@
                 @include media('lg') {
                     width: 194px;
                     height: 87px;
+                    margin-bottom: 23px;
                 }
     
                 @include media('xl') {
@@ -343,16 +386,24 @@
             }
 
             &--second{
+
+                @include media('sm'){
+                    margin-top: 25px;
+                    margin-bottom: 31px;
+                }
+
                 @include media('md') {
                     font-size: 14px;
                     width: 332px;
-                    // min-width: 350px;
-                    // max-width: 400px;
+                    margin-top: 23px;
+                    margin-bottom: 31px;
                 }
     
                 @include media('lg') {
                     width: 211px;
                     height: 57px;
+
+                    margin-bottom: 44px;
                 }
     
                 @include media('xl') {}
@@ -361,11 +412,17 @@
             }
 
             &--third{
+
+                @include media('sm'){
+                    margin-top: 30px;
+                    margin-bottom: 38px;
+                }
+
                 @include media('md') {
                     font-size: 14px;
                     width: 362px;
-                    // min-width: 350px;
-                    // max-width: 400px;
+                    margin-top: 21px;
+                    margin-bottom: 31px;
                 }
     
                 @include media('lg') {

@@ -98,7 +98,7 @@
 		}
 
 		&__item {
-			background-color: getColor(white);
+			background-color: getColor(light);
 			padding-bottom: 38px;
 			border-radius: 5px;
 			@include flex(col, true, false);
@@ -124,7 +124,6 @@
 					height: 270px;
 					background-repeat: no-repeat;
 					background-position: center center;
-					background-color: #ededed;
 
 					@include media('md') {
 						background-size: 185px 185px;
@@ -179,7 +178,6 @@
 					height: 270px;
 					background-repeat: no-repeat;
 					background-position: center center;
-					background-color: #ededed;
 
 					@include media('md') {
 						background-size: 182px 182px;
@@ -230,7 +228,6 @@
 					height: 270px;
 					background-repeat: no-repeat;
 					background-position: center center;
-					background-color: #ededed;
 
 					@include media('md') {
 						background-size: 198px 132px;
