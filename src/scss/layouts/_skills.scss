@@ -98,14 +98,18 @@
 		}
 
 		&__item {
+<<<<<<< Updated upstream
 			background-color: getColor(white);
 			padding-bottom: 38px;
+=======
+			background-color: getColor(light);
+>>>>>>> Stashed changes
 			border-radius: 5px;
-			@include flex(col, true, false);
+			@include flex(col, false, false);
+			align-items: center;
 			overflow: hidden;
 
 			@include media('md') {
-				padding-bottom: 36px;
 				height: 534px;
 			}
 
@@ -121,19 +125,20 @@
 					background-image: url(../images/skills-first-sm.svg);
 					background-size: 213px 213px;
 					width: 100%;
-					height: 270px;
+					height: 220px;
 					background-repeat: no-repeat;
 					background-position: center center;
 					background-color: #ededed;
 
 					@include media('md') {
 						background-size: 185px 185px;
-						height: 191px;
+						height: 196px;
+						flex-shrink: 0;
 					}
 
 					@include media('lg') {
 						background-size: 214px 214px;
-						height: 214px;
+						height: 245px;
 					}
 
 					@include media('xl') {
@@ -143,7 +148,7 @@
 
 					@include media('xxl') {
 						background-size: 390px 390px;
-						height: 390px;
+						height: 428px;
 					}
 				}
 
@@ -176,14 +181,14 @@
 					background-image: url(../images/skills-second-sm.svg);
 					background-size: 204px 204px;
 					width: 100%;
-					height: 270px;
+					height: 220px;
 					background-repeat: no-repeat;
 					background-position: center center;
 					background-color: #ededed;
 
 					@include media('md') {
 						background-size: 182px 182px;
-						height: 191px;
+						height: 196px;
 						flex-shrink: 0;
 					}
 
@@ -199,7 +204,7 @@
 
 					@include media('xxl') {
 						background-size: 293px 293px;
-						height: 293px;
+						height: 260px;
 					}
 				}
 
@@ -227,14 +232,15 @@
 					background-image: url(../images/skills-third-sm.svg);
 					background-size: 236px 157px;
 					width: 100%;
-					height: 270px;
+					height: 220px;
 					background-repeat: no-repeat;
 					background-position: center center;
 					background-color: #ededed;
 
 					@include media('md') {
 						background-size: 198px 132px;
-						height: 191px;
+						height: 196px;
+						flex-shrink: 0;
 					}
 
 					@include media('lg') {
@@ -249,7 +255,7 @@
 
 					@include media('xxl') {
 						background-size: 371px 247px;
-						height: 293px;
+						height: 260px;
 					}
 				}
 
@@ -281,15 +287,19 @@
 					background-image: url(../images/skills-fourth-sm.svg);
 					background-size: 232px 154px;
 					width: 100%;
-					height: 270px;
+					height: 220px;
 					background-repeat: no-repeat;
 					background-position: center center;
+<<<<<<< Updated upstream
 					background-color: #ededed;
 					flex-shrink: 0;
+=======
+>>>>>>> Stashed changes
 
 					@include media('md') {
 						background-size: 206px 137px;
-						height: 191px;
+						height: 196px;
+						flex-shrink: 0;
 					}
 
 					@include media('lg') {
@@ -304,12 +314,15 @@
 						background-image: url(../images/skills-fourth-lg.svg);
 						background-size: 202px 134px;
 						width: 202px;
-						height: 134px;
+						height: 100%;
+						background-repeat: no-repeat;
+						background-position: bottom center;
 
 						@include media('xl') {
 							background-size: 254px 169px;
-							width: 254px;
+							width: 272px;
 							height: 169px;
+							background-position: center right;
 						}
 
 						@include media('xxl') {
@@ -328,7 +341,8 @@
 
 				@include media('lg') {
 					grid-area: 2 / 2 / 3 / 4;
-					padding: 0 0 26px 22px;
+					padding-left: 22px;
+					padding-bottom: 34px;
 					flex-direction: row;
 					height: 210px;
 				}
@@ -340,7 +354,7 @@
 				@include media('xxl') {
 					height: 343px;
 					justify-content: space-between;
-					padding: 0 25px 26px 22px;
+					padding-left: 48px;
 				}
 			}
 
@@ -351,18 +365,34 @@
 				margin-top: 20px;
 				margin-bottom: 20px;
 
+				@include media('md') {
+					margin-top: 0;
+				}
+
 				@include media('lg') {
 					font-size: 20px;
 					margin-top: 10px;
-					margin-bottom: 10px;
+					margin-bottom: 15px;
 				}
 
 				@include media('xl') {
 					margin-bottom: 10px;
+					margin-top: 17px;
 				}
 
 				@include media('xxl') {
 					font-size: 30px;
+				}
+
+				&--fourth {
+					@include media('lg') {
+						margin-top: 30px;
+						margin-bottom: 23px;
+					}
+
+					@include media('xl') {
+						margin-bottom: 15px;
+					}
 				}
 			}
 
@@ -374,7 +404,7 @@
 				color: getColor('secondary');
 
 				@include media('md') {
-					margin-bottom: 102px;
+					margin-bottom: 100px;
 					max-width: 200px;
 				}
 
@@ -402,6 +432,7 @@
 						font-size: 13px;
 						line-height: 19.5px;
 						max-width: 200px;
+						margin-bottom: 26px;
 					}
 
 					@include media('xl') {
@@ -421,11 +452,13 @@
 				&--second {
 					font-size: 12px;
 					line-height: 18px;
+					margin-bottom: 124px;
 
 					@include media('lg') {
 						max-width: 200px;
 						font-size: 13px;
 						line-height: 19.5px;
+						margin-bottom: 13px;
 					}
 
 					@include media('xl') {
@@ -435,9 +468,10 @@
 					}
 
 					@include media('xxl') {
-						max-width: 340px;
+						max-width: 360px;
 						font-size: 16px;
 						line-height: 24px;
+						margin-bottom: 40px;
 					}
 				}
 
@@ -472,9 +506,10 @@
 					}
 
 					@include media('xxl') {
-						max-width: 340px;
+						max-width: 360px;
 						font-size: 16px;
 						line-height: 24px;
+						margin-bottom: 40px;
 					}
 				}
 
@@ -483,13 +518,13 @@
 					line-height: 19.5px;
 
 					@include media('md') {
-						margin-bottom: 119px;
+						margin-bottom: 120px;
 						max-width: 200px;
 					}
 
 					@include media('lg') {
 						margin-bottom: 13px;
-						max-width: 260px;
+						max-width: 300px;
 					}
 
 					@include media('xl') {
@@ -507,7 +542,7 @@
 
 			&-btn {
 				background-color: getColor('primary');
-				margin-top: 20px;
+				margin-top: 35px;
 				color: #ffffff;
 				padding: 14px 42px;
 				font-size: 14px;
@@ -516,7 +551,7 @@
 				border-radius: 5px;
 				width: 178px;
 				height: 50px;
-				@include transition(background-color);
+				@include transition('background-color');
 
 				&:hover,
 				&:focus {
