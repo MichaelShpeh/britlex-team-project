@@ -1,6 +1,6 @@
 .pricing {
 
-    
+
     background-color: rgb(247, 224, 13);
     padding-bottom: 72px;
 
@@ -9,15 +9,15 @@
     }
 
     @include media('lg') {
-        padding-bottom: 36px;
+        padding-bottom: 65px;
     }
 
     @include media('xl') {
-        padding-bottom: 70px;
+        padding-bottom: 136px;
     }
 
     @include media('xxl') {
-        padding-bottom: 129px;
+        padding-bottom: 257px;
     }
 
     &__titel {
@@ -75,7 +75,7 @@
                 width: 248px;
                 height: 248px;
 
-                @include media('sm'){
+                @include media('sm') {
                     margin-top: 49px;
                 }
 
@@ -97,6 +97,7 @@
                     background-size: 222px 222px;
                     width: 222px;
                     height: 222px;
+                    margin-top: 22px;
                 }
 
                 @include media('xxl') {
@@ -114,7 +115,7 @@
                 width: 257px;
                 height: 197px;
 
-                @include media('sm'){
+                @include media('sm') {
                     margin-top: 63px;
                 }
 
@@ -136,6 +137,7 @@
                     background-size: 267px 195px;
                     width: 267px;
                     height: 195px;
+                    margin-top: 47px;
                 }
 
                 @include media('xxl') {
@@ -153,7 +155,7 @@
                 width: 241px;
                 height: 241px;
 
-                @include media('sm'){
+                @include media('sm') {
                     margin-top: 72px;
                 }
 
@@ -175,60 +177,13 @@
                     background-size: 242px 242px;
                     width: 242px;
                     height: 242px;
+                    margin-top: 10px;
                 }
 
                 @include media('xxl') {
                     background-size: 340px 340px;
                     width: 340px;
                     height: 340px;
-                }
-            }
-
-            &--btn {
-                font-family: getFont(poppins);
-                font-weight: 400;
-                font-size: 14px;
-                background-color: getColor('pricing-btn');
-                @include flexJCcenJCsbAIcen;
-                padding-left: 12px;
-                padding-right: 15px;
-                width: 170px;
-                height: 37px;
-                border-radius: 5px;
-                // margin-bottom: 72px;
-                color: getColor(gray);
-
-                @include media('md') {
-                    font-size: 16px;
-                    width: 205px;
-                    height: 45px;
-                }
-
-                @include media('lg') {}
-
-                @include media('xl') {}
-
-                @include media('xxl') {}
-
-                &--span {
-                    font-weight: 400;
-                    // width: 90px;
-                    height: 27px;
-                    font-size: 18px;
-                    color: getColor('primary');
-
-                    @include media('md') {
-                        display: block;
-                        font-size: 22px;
-                        height: 36px;
-                        width: 90px;
-                    }
-
-                    @include media('lg') {}
-
-                    @include media('xl') {}
-
-                    @include media('xxl') {}
                 }
             }
         }
@@ -238,6 +193,7 @@
             font-size: 18px;
             line-height: 1.56%;
             color: getColor('primary');
+            align-items: center;
 
             // @include media('md') {
             //     // font-size: 24px;
@@ -256,16 +212,20 @@
 
             // @include media('xxl') {}
 
-            &--first{
-                @include media('sm'){
+            &--first {
+                @include media('sm') {
+                    height: 28px;
                     margin-top: 28px;
+                    margin-bottom: 17px;
                 }
+
                 @include media('md') {
                     font-size: 24px;
                     line-height: 1.17;
                     margin-top: 29px;
+                    margin-bottom: 23px;
                 }
-    
+
                 @include media('lg') {
                     width: 177px;
                     font-size: 20px;
@@ -275,23 +235,32 @@
                     margin-top: 23px;
                     margin-bottom: 15px;
                 }
-    
-                @include media('xl') {}
-    
+
+                @include media('xl') {
+                    font-size: 22px;
+                    line-height: 1.55;
+                    width: 277px;
+                    height: 34px;
+                    margin-top: 20px;
+                    margin-bottom: 14px;
+                }
+
                 @include media('xxl') {}
             }
 
-            &--second{
-                @include media('sm'){
+            &--second {
+                @include media('sm') {
                     margin-top: 12px;
+                    margin-bottom: 25px;
                 }
 
                 @include media('md') {
                     font-size: 24px;
                     line-height: 1.17;
                     margin-top: 21px;
+                    margin-bottom: 19px;
                 }
-    
+
                 @include media('lg') {
                     width: 112px;
                     height: 56px;
@@ -302,24 +271,33 @@
                     margin-bottom: 14px;
 
                 }
-    
-                @include media('xl') {}
-    
+
+                @include media('xl') {
+                    font-size: 22px;
+                    line-height: 2.18;
+                    width: 209px;
+                    height: 48px;
+                    margin-top: 15px;
+                    margin-bottom: 9px;
+                }
+
                 @include media('xxl') {}
             }
 
-            &--third{
+            &--third {
 
-                @include media('sm'){
+                @include media('sm') {
                     margin-top: 7px;
+                    margin-bottom: 30px;
                 }
 
                 @include media('md') {
                     font-size: 24px;
                     line-height: 1.17;
                     margin-top: 15px;
+                    margin-bottom: 21px;
                 }
-    
+
                 @include media('lg') {
                     font-size: 20px;
                     width: 94px;
@@ -330,9 +308,16 @@
                     margin-bottom: 9px;
 
                 }
-    
-                @include media('xl') {}
-    
+
+                @include media('xl') {
+                    font-size: 22px;
+                    width: 183px;
+                    height: 48px;
+                    line-height: 2.18;
+                    margin-top: 5px;
+                    margin-bottom: 1px;
+                }
+
                 @include media('xxl') {}
             }
         }
@@ -356,84 +341,137 @@
 
             @include media('xxl') {}
 
-            &--first{
+            &--first {
 
-                @include media('sm'){
-                    margin-top: 17px;
+                @include media('sm') {
                     margin-bottom: 33px;
                 }
 
                 @include media('md') {
                     font-size: 14px;
                     width: 392px;
-                    margin-top: 23px;
                     margin-bottom: 31px;
                     // min-width: 350px;
                     // max-width: 400px;
                 }
-    
+
                 @include media('lg') {
                     width: 194px;
-                    height: 87px;
+                    height: 84px;
                     margin-bottom: 23px;
                 }
-    
+
                 @include media('xl') {
-                    width: 291px;
+                    font-size: 16px;
+                    width: 293px;
+                    height: 72px;
+                    margin-bottom: 31px;
                 }
-    
+
                 @include media('xxl') {}
             }
 
-            &--second{
+            &--second {
 
-                @include media('sm'){
-                    margin-top: 25px;
+                @include media('sm') {
                     margin-bottom: 31px;
                 }
 
                 @include media('md') {
                     font-size: 14px;
                     width: 332px;
-                    margin-top: 23px;
                     margin-bottom: 31px;
                 }
-    
+
                 @include media('lg') {
                     width: 211px;
-                    height: 57px;
+                    height: 63px;
 
                     margin-bottom: 44px;
                 }
-    
-                @include media('xl') {}
-    
+
+                @include media('xl') {
+                    font-size: 16px;
+                    width: 254px;
+                    height: 48px;
+                    margin-bottom: 52px;
+                }
+
                 @include media('xxl') {}
             }
 
-            &--third{
+            &--third {
 
-                @include media('sm'){
-                    margin-top: 30px;
+                @include media('sm') {
                     margin-bottom: 38px;
                 }
 
                 @include media('md') {
                     font-size: 14px;
                     width: 362px;
-                    margin-top: 21px;
                     margin-bottom: 31px;
                 }
-    
+
                 @include media('lg') {
-                    width: 227px;
+                    width: 223px;
                     height: 63px;
+                    margin-bottom: 49px;
                 }
-    
-                @include media('xl') {}
-    
+
+                @include media('xl') {
+                    font-size: 16px;
+                    width: 255px;
+                    height: 72px;
+                    margin-bottom: 34px;
+                }
+
                 @include media('xxl') {}
             }
+        }
+
+        &__btn {
+            font-family: getFont(poppins);
+            @include pricingButton;
+            @include flexJCcenJCsbAIcen;
+            padding-left: 12px;
+            padding-right: 15px;
+            color: getColor(gray);
+
+            @include media('md') {
+                font-size: 16px;
+                width: 205px;
+                height: 45px;
+            }
+
+            @include media('lg') {}
+
+            @include media('xl') {}
+
+            @include media('xxl') {}
+        }
+
+
+        &__span {
+            font-weight: 400;
+            // width: 90px;
+            height: 27px;
+            font-size: 18px;
+            color: getColor('primary');
+
+            @include media('md') {
+                display: block;
+                font-size: 22px;
+                height: 36px;
+                width: 90px;
+            }
+
+            @include media('lg') {}
+
+            @include media('xl') {
+                font-size: 24px;
+            }
+
+            @include media('xxl') {}
         }
     }
 
