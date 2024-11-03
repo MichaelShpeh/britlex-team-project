@@ -1,44 +1,41 @@
 .header {
 	padding-top: 36px;
 	padding-bottom: 29px;
-	@media screen and (min-width: getBreakPoint("md")){
+	@include media("md"){
 	 padding-top: 39px;
 	 padding-bottom: 11px;
 	}
-	@media screen and (min-width: getBreakPoint("lg")){
+	@include media("lg"){
 	 padding-top: 39px;
 	 padding-bottom: 68px;
 	}
-	@media screen and (min-width: getBreakPoint("xl")){
+	@include media("xl"){
 	 padding-top: 30px;
 	 padding-bottom: 88px;
 	}
-	@media screen and (min-width: getBreakPoint("xxl")){
+	@include media("xxl"){
 	 padding-top: 57px;
 	 padding-bottom: 125px;
 	}
+	.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	&-nav{
-	@include flex(row, true);
-	 @media screen and (min-width: getBreakPoint("md")){
-		 margin-right: 48px;
-		 margin-left: 32px;
-	 }
-	 @media screen and (min-width: getBreakPoint("lg")){
-		 margin-left: 39px;
-		 margin-right: 38px;
-	 }
-	 @media screen and (min-width: getBreakPoint("xl")){
+		display: flex;
+		@include media("xl"){
 		 margin-left: 31px;
-		 margin-right: 31px;
 	 }
-	 @media screen and (min-width: getBreakPoint("xxl")){
+	 @include media("xxl"){
 		 margin-left: 20px;
 		 margin-right: 20px;
 	 }
 	 &-list{
 		 display: none;
-		 @media screen and (min-width: getBreakPoint("xl")){
+		 @include media("xl"){
 			 display: flex;
+			 align-items: center;
 			 margin-left: 167px;
 		 }
 		 &__item:not(:last-of-type){
@@ -48,30 +45,34 @@
 			 font-weight: 500;
 			 font-size: 16px;
 			 color: getColor('primary');
-			 @media screen and (min-width: getBreakPoint("xxl")){
+			 @include media("xxl"){
 				 font-size: 20px;
 			 }
 		 }
-		 @media screen and (min-width: getBreakPoint("xxl")){
+		 @include media("xxl"){
 			 margin-left: 253px;
 		 }
 	 }
-	//  .logo{
-		// 
-		// 
-	//  }
+	 .logo{
+		margin-right: 186px;
+		margin-left: 14px;
+		@include media("md"){
+			margin-right: 0px;
+			margin-left: 0px;
+		}
+	 }
 	 }
 	 &__label{
-		display: flex;
-		justify-content: end;
+		order: 2;
 		margin-right: 15px;
-		 @media screen and (min-width: getBreakPoint("md")){
-			 margin-left: 360px;
+		@include media("md"){
+			 margin-left: 362px;
+			 margin-right: 0px;
 		 }
-		 @media screen and (min-width: getBreakPoint("lg")){
-			 margin-left: 570px;
+		 @include media("lg"){
+			 margin-left: 571px;
 		 }
-		 @media screen and (min-width: getBreakPoint("xl")){
+		 @include media("xl"){
 			 display: none;
 		 }
 	 }
@@ -82,7 +83,7 @@
 	 &__button{
 		display: none;
 		transition: background-color 0.5s ease;
-		@media screen and (min-width: getBreakPoint("xl")){
+		@include media("xl"){
 		 display: block;
 		 border: 2px solid getColor('primary');
 		 border-radius: 5px;
@@ -93,9 +94,9 @@
 		 font-weight: 400;
 		 font-size: 18px;  
 		}
-		@media screen and (min-width: getBreakPoint("xxl")){
+		@include media("xxl"){
 			font-size: 24px;
-			padding: 8px 50px;
+			padding: 17px 50px;
 			margin-left: 240px;
 		}
 	}

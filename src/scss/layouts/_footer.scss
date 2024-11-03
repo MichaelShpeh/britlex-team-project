@@ -1,22 +1,22 @@
 .footer {
     padding-bottom: 46px;
-    padding-top: 84px;
+    padding-top: 26px;
 
     @include media("md"){
         padding-bottom: 26px;
-        padding-top: 169px;
+        padding-top: 24px;
     }
     @include media("lg"){
         padding-bottom: 15px;
-        padding-top: 131px;
+        padding-top: 18px;
     }
     @include media("xl"){
         padding-bottom: 24px;
-        padding-top: 180px;
+        padding-top: 22px;
     }
     @include media("xxl"){
         padding-bottom: 64px;
-        padding-top: 165px;
+        padding-top: 31px;
     }
 
     .container{
@@ -24,36 +24,15 @@
 
         @include media("md"){
             @include flex(row, false, true);
-            margin-left: 30px;
-            margin-right: 8px;
         }
-        @include media("xxl"){
-            margin-left: 20px;
-            margin-right: 0px;
-        }
-
-        &__title{
-            margin-bottom: 15px;
-			
-            @include media("md"){
-                margin-bottom: 0px;
-                margin-right: 104px;
-            }
-            @include media("lg"){
-                margin-right:261px
-            } 
-            @include media("xl"){
-                margin-right: 422px;
-            }
-            @include media("xxl"){
-                margin-right: 550px;
-            }
-       }
        &-list{
         display: flex;
-        margin-left: 13px;
-        margin-right: 7px;
-
+        @include media("md"){
+            margin-right: 25px;
+        }
+        @include media("xxl"){
+            margin-right: 120px;
+        }
         &__link{
             color: getColor('secondary')
         }
@@ -101,6 +80,16 @@
                     height: 5px;
                 }
             }
+        }
+       }
+       .logo{
+        margin-bottom: 15px;
+        @include media("md"){
+            margin-bottom: 0px;
+            margin-left: 30px;
+        }
+        @include media("xxl"){
+            margin-left: 131px;
         }
        }
     }
