@@ -55,6 +55,7 @@
 			}
 
 			@include media(md) {
+                margin-bottom: 28px;
 				gap: 23px;
 				&::after {
 					width: 352px;
@@ -65,6 +66,7 @@
 
 			@include media(lg) {
 				text-align: left;
+                margin-bottom: 0;
 				&::after {
 					width: 295px;
 					height: 295px;
@@ -136,7 +138,7 @@
 			@include media(xl) {
 				font-size: 16px;
 				width: 525px;
-				margin-bottom: 50px;
+				margin-bottom: 27px;
 
 				.sm-br {
 					display: none;
@@ -165,23 +167,21 @@
 			gap: 47px;
 
 			@include media(md) {
-				width: 425px;
+				width: 496px;
 				@include flex(row, false, true);
 			}
 
 			@include media(lg) {
 				text-wrap: nowrap;
-				justify-content: start;
-				gap: 32px;
+                width: 320px;
 			}
 
 			@include media(xl) {
-				width: 400px;
+				width: 520px;
 			}
 
 			@include media(xxl) {
-				width: 610px;
-				justify-content: space-between;
+				width: 630px;
 			}
 
 			.about-list__item {
