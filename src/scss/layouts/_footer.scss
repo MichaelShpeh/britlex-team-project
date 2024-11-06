@@ -27,6 +27,7 @@
         }
        &-list{
         display: flex;
+        white-space: nowrap;
         @include media("md"){
             margin-right: 25px;
         }
@@ -86,10 +87,6 @@
         margin-bottom: 15px;
         @include media("md"){
             margin-bottom: 0px;
-            margin-left: 30px;
-        }
-        @include media("xxl"){
-            margin-left: 131px;
         }
        }
     }
