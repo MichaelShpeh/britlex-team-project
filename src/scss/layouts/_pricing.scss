@@ -67,6 +67,75 @@
 
             @include flexJCcenFDcolAIcenTAcen;
 
+            &--first{
+
+                @include media('sm'){
+                    margin-top: 49px;
+                }
+
+                @include media('md'){
+                    margin-top: 54px;
+                }
+
+                @include media('lg'){
+                    margin-top: 31px;
+                }
+
+                @include media('xl'){
+                    margin-top: 22px;
+                }
+
+                @include media('xxl'){
+
+                }
+            }
+
+            &--second{
+                
+                @include media('sm'){
+                    margin-top: 63px;
+                }
+
+                @include media('md'){
+                    margin-top: 71px;
+                }
+
+                @include media('lg'){
+                    margin-top: 61px;
+                }
+
+                @include media('xl'){
+                    margin-top: 47px;
+                }
+
+                @include media('xxl'){
+
+                }
+            }
+
+            &--third{
+                
+                @include media('sm'){
+                    margin-top: 72px;
+                }
+
+                @include media('md'){
+                    margin-top: 71px;
+                }
+
+                @include media('lg'){
+                    margin-top: 31px;
+                }
+
+                @include media('xl'){
+                    margin-top: 10px;
+                }
+
+                @include media('xxl'){
+
+                }
+            }
+
             &--first::before {
                 content: '';
                 display: flex;
@@ -76,28 +145,28 @@
                 height: 248px;
 
                 @include media('sm') {
-                    margin-top: 49px;
+                    // margin-top: 49px;
                 }
 
                 @include media('md') {
                     background-size: 291px 291px;
                     width: 291px;
                     height: 291px;
-                    margin-top: 54px;
+                    // margin-top: 54px;
                 }
 
                 @include media('lg') {
                     background-size: 197px 197px;
                     width: 197px;
                     height: 197px;
-                    margin-top: 31px;
+                    // margin-top: 31px;
                 }
 
                 @include media('xl') {
                     background-size: 222px 222px;
                     width: 222px;
                     height: 222px;
-                    margin-top: 22px;
+                    // margin-top: 22px;
                 }
 
                 @include media('xxl') {
@@ -116,28 +185,28 @@
                 height: 197px;
 
                 @include media('sm') {
-                    margin-top: 63px;
+                    // margin-top: 63px;
                 }
 
                 @include media('md') {
                     background-size: 314px 241px;
                     width: 314px;
                     height: 241px;
-                    margin-top: 71px;
+                    // margin-top: 71px;
                 }
 
                 @include media('lg') {
                     background-size: 219px 168px;
                     width: 219px;
                     height: 168px;
-                    margin-top: 61px;
+                    // margin-top: 61px;
                 }
 
                 @include media('xl') {
                     background-size: 267px 195px;
                     width: 267px;
                     height: 195px;
-                    margin-top: 47px;
+                    // margin-top: 47px;
                 }
 
                 @include media('xxl') {
@@ -156,28 +225,28 @@
                 height: 241px;
 
                 @include media('sm') {
-                    margin-top: 72px;
+                    // margin-top: 72px;
                 }
 
                 @include media('md') {
                     background-size: 253px 253px;
                     width: 253px;
                     height: 253px;
-                    margin-top: 71px;
+                    // margin-top: 71px;
                 }
 
                 @include media('lg') {
                     background-size: 210px 210px;
                     width: 210px;
                     height: 210px;
-                    margin-top: 31px;
+                    // margin-top: 31px;
                 }
 
                 @include media('xl') {
                     background-size: 242px 242px;
                     width: 242px;
                     height: 242px;
-                    margin-top: 10px;
+                    // margin-top: 10px;
                 }
 
                 @include media('xxl') {
