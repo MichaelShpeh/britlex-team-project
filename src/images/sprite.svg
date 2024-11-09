@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="icon-open-burger-menu-sm" viewBox="0 0 34 19" fill="none">
+    <rect width="33.5294" height="3.35294" rx="1" fill="#39515E" />
+    <rect y="7.82353" width="33.5294" height="3.35294" rx="1" fill="#39515E" />
+    <rect y="15.6471" width="23.7159" height="3.35294" rx="1" fill="#39515E" />
+  </symbol>
+
+  <symbol id="icon-open-burger-menu-md" viewBox="0 0 43 24" fill="none">
+  <rect width="42.3529" height="4.23529" rx="1" fill="#39515E" />
+  <rect y="9.88235" width="42.3529" height="4.23529" rx="1" fill="#39515E" />
+  <rect y="19.7647" width="29.957" height="4.23529" rx="1" fill="#39515E" />
+  </symbol>
+  
+  <symbol id="icon-open-burger-menu-lg" viewBox="0 0 30 17" fill="none">
+    <rect width="30" height="3" rx="1" fill="#39515E" />
+    <rect y="7" width="30" height="3" rx="1" fill="#39515E" />
+    <rect y="14" width="21.2195" height="3" rx="1" fill="#39515E" />
+  </symbol>
+</svg>
+
