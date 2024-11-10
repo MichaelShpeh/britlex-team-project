@@ -2,11 +2,11 @@
     background-color: #cafbffb6;
     padding-bottom: 50px;
 
-    @include media('md') {
+    @media screen and (min-width: getBreakPoint('md')) {
         padding-bottom: 100px;
     }
 
-    @include media('lg') {
+    @media screen and (min-width: getBreakPoint('lg')) {
         height: 413px;
     }
 
@@ -20,7 +20,7 @@
     }
 
     .container {
-        @include media('lg') {
+        @media screen and (min-width: getBreakPoint('lg')) {
             height: 413px;
             display: flex;
             position: relative;
@@ -44,14 +44,14 @@
         margin-bottom: 16px;
         background-image: url(../images/hero-sm.svg);
 
-        @include media('md') {
+        @media screen and (min-width: getBreakPoint('md')) {
             width: 424px;
             height: 424px;
             margin-bottom: 16px;
             background-image: url(../images/hero-md.svg);
         }
 
-        @include media('lg') {
+        @media screen and (min-width: getBreakPoint('lg')) {
             width: 350px;
             height: 350px;
             position: absolute;
@@ -68,7 +68,7 @@
             background-image: url(../images/hero-xl.svg);
         }
 
-        @include media('xxl') {
+        @media screen and (min-width: getBreakPoint('xxl')) {
             width: 660px;
             height: 660px;
             background-image: url(../images/hero.svg);
@@ -87,7 +87,7 @@
         margin: 0 auto;
         margin-bottom: 20px;
 
-        @include media('md') {
+        @media screen and (min-width: getBreakPoint('md')) {
             width: 491px;
             height: 45px;
             font-size: 34px;
@@ -95,7 +95,7 @@
             margin-bottom: 25px;
         }
 
-        @include media('lg') {
+        @media screen and (min-width: getBreakPoint('lg')) {
             width: 217px;
             height: 135px;
             font-size: 36px;
@@ -131,12 +131,9 @@
         rotate: 38%;
         background-size: cover;
         background-image: url(../images/hero-lamp.svg);
+        display: none;
 
-        @include media('sm') {
-            display: none;
-        }
-
-        @include media('lg') {
+        @media screen and (min-width: getBreakPoint('lg')) {
             width: 51px;
             height: 51px;
             display: block;
@@ -145,15 +142,14 @@
             left: 227px;
         }
 
-
-        @include media('xl') {
+        @media screen and (min-width: getBreakPoint('xl')) {
             width: 60px;
             height: 60px;
             top: 103px;
             left: 302px;
         }
 
-        @include media('xxl') {
+        @media screen and (min-width: getBreakPoint('xxl')) {
             width: 85px;
             height: 85px;
             top: 142px;
@@ -183,13 +179,13 @@
         margin: 0 auto;
         margin-bottom: 35px;
 
-        @include media('md') {
+        @media screen and (min-width: getBreakPoint('md')) {
             width: 491px;
             font-size: 16px;
             margin-bottom: 20px;
         }
 
-        @include media('lg') {
+        @media screen and (min-width: getBreakPoint('lg')) {
             width: 335px;
             height: 72px;
             text-align: left;
@@ -227,7 +223,7 @@
         font-size: 16px;
         margin: 0 auto;
 
-        @include media(md) {
+        @media screen and (min-width: getBreakPoint('md')) {
             width: 305px;
             height: 75px;
             font-size: 18px;
