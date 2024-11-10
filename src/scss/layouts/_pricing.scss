@@ -67,18 +67,32 @@
 
             @include flexJCcenFDcolAIcenTAcen;
 
+            @include media('lg'){
+                display: flex;
+                align-items: start;
+            }
+             
+            // @include media('xxl'){
+            //     display: flex;
+            //     // margin-left: 0px;
+            //     align-items: start;
+            // }
+
             &--first{
 
                 @include media('sm'){
                     margin-top: 49px;
+                    margin-bottom: 63px;
                 }
 
                 @include media('md'){
                     margin-top: 54px;
+                    margin-bottom: 71px;
                 }
 
                 @include media('lg'){
                     margin-top: 31px;
+                    margin-bottom: 0px;
                 }
 
                 @include media('xl'){
@@ -86,22 +100,25 @@
                 }
 
                 @include media('xxl'){
-
+                    margin-top: 57px;
                 }
             }
 
             &--second{
                 
                 @include media('sm'){
-                    margin-top: 63px;
+                    // margin-top: 63px;
+                    margin-bottom: 72px;
                 }
 
                 @include media('md'){
-                    margin-top: 71px;
+                    // margin-top: 71px;
+                    margin-bottom: 71px;
                 }
 
                 @include media('lg'){
                     margin-top: 61px;
+                    margin-bottom: 0px;
                 }
 
                 @include media('xl'){
@@ -109,18 +126,18 @@
                 }
 
                 @include media('xxl'){
-
+                    margin-top: 83px;
                 }
             }
 
             &--third{
                 
                 @include media('sm'){
-                    margin-top: 72px;
+                    // margin-top: 72px;
                 }
 
                 @include media('md'){
-                    margin-top: 71px;
+                    // margin-top: 71px;
                 }
 
                 @include media('lg'){
@@ -132,7 +149,7 @@
                 }
 
                 @include media('xxl'){
-
+                    margin-top: 57px;
                 }
             }
 
@@ -211,7 +228,7 @@
 
                 @include media('xxl') {
                     background-size: 391px 283px;
-                    width: 341px;
+                    width: 391px;
                     height: 283px;
                 }
             }
@@ -258,28 +275,9 @@
         }
 
         &__titel {
-            // font-weight: 600;
-            font-size: 18px;
             line-height: 1.56%;
-            color: getColor('primary');
             align-items: center;
-
-            // @include media('md') {
-            //     // font-size: 24px;
-            //     line-height: 1.17;
-            // }
-
-            // @include media('lg') {
-            //     width: 177px;
-            //     height: 56px;
-            //     font-size: 20px;
-            //     line-height: 1.40;
-            //     text-align: left;
-            // }
-
-            // @include media('xl') {}
-
-            // @include media('xxl') {}
+            @include cardTitle;
 
             &--first {
                 @include media('sm') {
@@ -314,7 +312,14 @@
                     margin-bottom: 14px;
                 }
 
-                @include media('xxl') {}
+                @include media('xxl') {
+                    font-size: 30px;
+                    line-height: 1.60;
+                    width: 377px;
+                    height: 48px;
+                    margin-top: 40px;
+                    margin-bottom: 19px;
+                }
             }
 
             &--second {
@@ -350,7 +355,14 @@
                     margin-bottom: 9px;
                 }
 
-                @include media('xxl') {}
+                @include media('xxl') {
+                    font-size: 30px;
+                    line-height: 1.60;
+                    width: 285px;
+                    height: 48px;
+                    margin-top: 42px;
+                    margin-bottom: 23px;
+                }
             }
 
             &--third {
@@ -387,7 +399,14 @@
                     margin-bottom: 1px;
                 }
 
-                @include media('xxl') {}
+                @include media('xxl') {
+                    font-size: 30px;
+                    line-height: 1.60;
+                    width: 249px;
+                    height: 48px;
+                    margin-top: 11px;
+                    margin-bottom: 20px;
+                }
             }
         }
 
@@ -437,7 +456,12 @@
                     margin-bottom: 31px;
                 }
 
-                @include media('xxl') {}
+                @include media('xxl') {
+                    font-size: 20px;
+                    width: 420px;
+                    height: 90px;
+                    margin-bottom: 29px;
+                }
             }
 
             &--second {
@@ -466,7 +490,12 @@
                     margin-bottom: 52px;
                 }
 
-                @include media('xxl') {}
+                @include media('xxl') {
+                    font-size: 20px;
+                    width: 367px;
+                    height: 60px;
+                    margin-bottom: 59px;
+                }
             }
 
             &--third {
@@ -494,7 +523,12 @@
                     margin-bottom: 34px;
                 }
 
-                @include media('xxl') {}
+                @include media('xxl') {
+                    font-size: 20px;
+                    width: 425px;
+                    height: 60px;
+                    margin-bottom: 59px;
+                }
             }
         }
 
@@ -516,7 +550,11 @@
 
             @include media('xl') {}
 
-            @include media('xxl') {}
+            @include media('xxl') {
+                font-size: 18px;
+                width: 240px;
+                margin-left: 0px;
+            }
         }
 
 
@@ -540,7 +578,10 @@
                 font-size: 24px;
             }
 
-            @include media('xxl') {}
+            @include media('xxl') {
+                font-size: 30px;
+                height: 45px;
+            }
         }
     }
 
