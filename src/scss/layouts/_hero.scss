@@ -15,6 +15,10 @@
         height: 507px;
     }
 
+    @media screen and (min-width: getBreakPoint('xxl')) {
+        height: 764px;
+    }
+
     .container {
         @include media('lg') {
             height: 413px;
@@ -24,6 +28,10 @@
 
         @media screen and (min-width: getBreakPoint('xl')) {
             height: 507px;
+        }
+
+        @media screen and (min-width: getBreakPoint('xxl')) {
+            height: 764px;
         }
     }
 
@@ -106,6 +114,15 @@
             top: 0px;
             left: 29px;
         }
+
+        @media screen and (min-width: getBreakPoint('xxl')) {
+            width: 386px;
+            height: 240px;
+            top: 67px;
+            left: 130px;
+            font-size: 64px;
+            line-height: 125%;
+        }
     }
 
     .hero__title::after {
@@ -139,6 +156,8 @@
         @include media('xxl') {
             width: 85px;
             height: 85px;
+            top: 142px;
+            left: 442px;
         }
     }
 
@@ -186,6 +205,14 @@
             top: 220px;
             left: 33px;
         }
+
+        @media screen and (min-width: getBreakPoint('xxl')) {
+            width: 552px;
+            height: 108px;
+            top: 330px;
+            left: 127px;
+            font-size: 24px;
+        }
     }
 
     .hero__button {
@@ -219,6 +246,15 @@
             height: 80px;
             top: 343px;
             left: 29px;
+        }
+
+        @media screen and (min-width: getBreakPoint('xxl')) {
+            width: 438px;
+            height: 118px;
+            top: 499px;
+            left: 129px;
+            border-radius: 15px;
+            font-size: 36px;
         }
     }
 
