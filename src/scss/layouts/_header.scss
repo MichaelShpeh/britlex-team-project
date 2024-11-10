@@ -35,6 +35,7 @@
 		 display: none;
 		 @include media("xl"){
 			 display: flex;
+			 justify-content: center;
 			 align-items: center;
 			 margin-left: 167px;
 		 }
@@ -76,9 +77,55 @@
 		 @include media("xl"){
 			 display: none;
 		 }
+
+		 .open-sm{
+			width: 34px;
+			height: 19px;
+			@include media("md"){
+				display: none;
+			}
+		 }
+		 .open-md{
+			width: 43px;
+			height: 24px;
+			@media screen and (max-width:$md){
+				display: none;
+			}
+			@include media("lg"){
+				display: none;
+			}
+		 }
+		 .open-lg{
+			width: 30px;
+			height: 17px;
+			@media screen and (max-width:$lg) {
+				display: none;
+			}
+		 }
 	 }
 	 &__input{
 		display: none;
+	}
+	&__input:checked~.header-nav{
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+		padding-top: 48px;
+		overflow: auto;
+	}
+	&__input:checked~.header-nav>.header-nav-list{
+		display: flex;
+		flex-direction: column;
+		margin-left: 33px;
+	}
+	&__input:checked~.header__button{
+		display: inline-block;
 	}
 	 
 	 &__button{
