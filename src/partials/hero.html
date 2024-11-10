@@ -7,7 +7,66 @@
 			With our teachers who write a program for each student, you will be able
 			to make your first sketch after the first lesson.
 		</p>
-		<button class="hero__button">Get started</button>
+		<button class="hero__button" type="button" data-modal-open>Get started</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn" data-modal-close>
+                   <svg width="11px" height="11px">
+                       <use href="./images/symboldefs.svg#close"></use>
+                   </svg>
+                </button>
+                <h3 class="title-modal">Register to continue</h3>
+                <form class="forms">
+                    <div class="div-form">
+                        <label class="label" for="input-man">Name</label>
+                        <input maxlength="30" class="input-text" type="text" id="input-man" required>
+                        <svg class="man" width="12px" height="12px">
+                            <use href="./images/symboldefs.svg#modal-1"></use>
+                        </svg>
+                    </div>
+                    <div class="div-form">
+                        <label class="label" for="input-phone">Phone</label>
+                        <input maxlength="13" minlength="10" inputmode="numeric" pattern="[0-9+]*" class="input-text" type="tel" id="input-phone" required>
+                        <svg class="phone1" width="13px" height="13px">
+                            <use href="./images/symboldefs.svg#modal-2"></use>
+                        </svg>
+                    </div>
+                    <div class="div-form">
+                        <label class="label" for="input-mail">G-mail</label>
+                        <input maxlength="30" minlength="5" class="input-text" type="email" id="input-mail" required>
+                        <svg class="mail" width="15px" height="12px">
+                            <use href="./images/symboldefs.svg#modal-3"></use>
+                        </svg>
+                    </div>
+                    <div class="gender">
+                        <p class="label">Your gender</p>
+                        <ul class="checkbox-gender-list">
+                            <li class="checkbox-gender-list__item">
+                                <input class="checkbox-gender one" type="checkbox">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/men.svg"></use>
+                                </svg>
+                            </li>
+                            <li class="checkbox-gender-list__item">
+                                <input class="checkbox-gender two" type="checkbox">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/women.svg"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="div-checkbox">
+                        <input id="checkbox" type="checkbox" required>
+                        <label for="checkbox" class="checkbox-lb">I agree with the mailing and accept the
+                            <a class="link-check" href="./lorem.html">
+                                Terms of the Agreement
+                            </a>
+                        </label>
+                    </div>
+                    <button class="button-hero submit" type="submit" data-modal-close>Відправити</button>
+                </form>
+            </div>
+        </div>
 	</div>
 	</div>
 </section>
