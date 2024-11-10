@@ -123,3 +123,9 @@
 	border-radius: $border;
 	background-color: getColor('pricing-btn');
 }
+
+@mixin cardTitle($size: 18px, $weight: 600,) { 
+	font-size: $size;
+	font-weight: $weight;
+	color: getColor('primary');
+}
