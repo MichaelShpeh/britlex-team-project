@@ -14,9 +14,21 @@
                 </label>
 		<nav class="header-nav">
 			<load ="/partials/logo.html"/>
+			<input type="checkbox" id="toogle-close" class="header-nav__input" />
+			<label for="toogle-close" class="header-nav-label">
+				<svg class="icon-close close-sm">
+					<use href="../images/sprite.svg#icon-close-sm"></use>
+				</svg>
+				<svg class="icon-close close-md">
+					<use href="../images/sprite.svg#icon-close-md"></use>
+				</svg>
+				<svg class="icon-close close-lg">
+					<use href="../images/sprite.svg#icon-close-lg"></use>
+				</svg>
+			</label>
 			<ul class="header-nav-list">
 				<li class="header-nav-list__item">
-					<a href="../index.html" class="header-nav-list__link">Home</a>
+					<a href="./index.html" class="header-nav-list__link">Home</a>
 				</li>
 				<li class="header-nav-list__item">
 					<a href="#skills" class="header-nav-list__link">Skills</a>
