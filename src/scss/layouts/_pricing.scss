@@ -67,6 +67,17 @@
 
             @include flexJCcenFDcolAIcenTAcen;
 
+            @include media('lg'){
+                display: flex;
+                align-items: start;
+            }
+             
+            // @include media('xxl'){
+            //     display: flex;
+            //     // margin-left: 0px;
+            //     align-items: start;
+            // }
+
             &--first{
 
                 @include media('sm'){
@@ -562,7 +573,6 @@
                 font-size: 18px;
                 width: 240px;
                 margin-left: 0px;
-                text-align: left;
             }
         }
 
