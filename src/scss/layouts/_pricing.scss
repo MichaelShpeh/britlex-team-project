@@ -1,7 +1,5 @@
 .pricing {
 
-
-    background-color: rgb(247, 224, 13);
     padding-bottom: 72px;
 
     @include media('md') {
@@ -29,15 +27,14 @@
 
 
     &-list {
-        @include flex(col, false, false);
-        display: flex;
-        flex-direction: column;
+        // @include flex(col, false, false);
+        // display: flex;
+        // flex-direction: column;
 
         @include media('md') {}
 
         @include media('lg') {
             @include flex(row, true, true);
-            gap: 0px;
         }
 
         &__item {
