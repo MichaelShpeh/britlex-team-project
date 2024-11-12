@@ -10,12 +10,12 @@
 	 padding-bottom: 68px;
 	}
 	@include media("xl"){
-	 padding-top: 30px;
-	 padding-bottom: 89px;
+	 padding-top: 25px;
+	 padding-bottom: 66px;
 	}
 	@include media("xxl"){
-	 padding-top: 55px;
-	 padding-bottom: 115px;
+	 padding-top: 45px;
+	 padding-bottom: 57px;
 	}
 	.container{
 		display: flex;
@@ -91,7 +91,7 @@
 		 .open-md{
 			width: 43px;
 			height: 24px;
-			@media screen and (max-width:$md){
+			@media screen and (max-width: calc(#{$md} - 1px)){
 				display: none;
 			}
 			@include media("lg"){
@@ -101,7 +101,7 @@
 		 .open-lg{
 			width: 30px;
 			height: 17px;
-			@media screen and (max-width:$lg) {
+			@media screen and (max-width: calc(#{$lg} - 1px)){
 				display: none;
 			}
 		 }
@@ -146,7 +146,7 @@
 			opacity: 0.8;
 		}
 	}
-	@media screen and (max-width:$md) {
+	@media screen and (max-width: calc(#{$md} - 1px)) {
 	    &__input:checked~.header__label>.close-sm{
 	    display: block;
 	    z-index: 5;
@@ -156,7 +156,7 @@
     }
 	}
 	@include media("md"){
-		@media screen and (max-width:$lg) {
+		@media screen and (max-width: calc(#{$lg} - 1px)) {
 			&__input:checked~.header__label>.close-md{
 				display: block;
 				z-index: 5;
