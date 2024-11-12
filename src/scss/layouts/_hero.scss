@@ -102,7 +102,7 @@
             line-height: 125%;
             text-align: left;
             position: absolute;
-            top: 0px;
+            top: 28px;
             left: 40px;
         }
 
@@ -111,14 +111,14 @@
             height: 192px;
             font-size: 48px;
             line-height: 133%;
-            top: 0px;
+            top: 13px;
             left: 29px;
         }
 
         @media screen and (min-width: getBreakPoint('xxl')) {
             width: 386px;
             height: 240px;
-            top: 67px;
+            top: 50px;
             left: 130px;
             font-size: 64px;
             line-height: 125%;
@@ -127,7 +127,6 @@
 
     .hero__title::after {
         content: '';
-        outline: #000 solid 1px;
         rotate: 38%;
         background-size: cover;
         background-image: url(../images/hero-lamp.svg);
@@ -190,7 +189,7 @@
             height: 72px;
             text-align: left;
             position: absolute;
-            top: 160px;
+            top: 188px;
             left: 39px;
         }
 
@@ -198,7 +197,7 @@
             width: 420px;
             height: 90px;
             font-size: 20px;
-            top: 220px;
+            top: 233px;
             left: 33px;
         }
 
@@ -232,7 +231,7 @@
 
         @media screen and (min-width: getBreakPoint('lg')) {
             position: absolute;
-            top: 260px;
+            top: 288px;
             left: 39px;
         }
 
@@ -240,7 +239,7 @@
             border-radius: 5px;
             width: 292px;
             height: 80px;
-            top: 343px;
+            top: 356px;
             left: 29px;
         }
 
@@ -254,7 +253,7 @@
         }
     }
 
-}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -390,4 +389,39 @@
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
   }
+
+  .div-checkbox {
+    width: 351px;
+        height: 24px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: -15px;
+        margin-bottom: 20px;
+  }
+
+  .checkbox-lb {
+    font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+  }
+
+  .link-check {
+    color: #2196F3;
+  }
+
+  .link-check:hover {
+    cursor: pointer;
+  }
+
+  .button-hero {
+    width: 200px;
+    height: 60px;
+    display: block;
+    color: #fff;
+    background-color: #263238;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+
+}
   
