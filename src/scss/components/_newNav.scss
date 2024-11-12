@@ -1,0 +1,32 @@
+.nav{
+	display: none;
+	&-list{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 167px;
+
+		&__item:not(:last-of-type){
+			margin-right: 30px;
+		}
+		&__link{
+			font-weight: 500;
+			font-size: 16px;
+			white-space: nowrap;
+			color: getColor('primary');
+			@include media("xxl"){
+				font-size: 20px;
+			}
+		}
+		@include media("xxl"){
+			margin-left: 253px;
+		}
+	}
+	@include media("xl"){
+		margin-left:31px
+	}
+	@include media("xxl"){
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}

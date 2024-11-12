@@ -26,7 +26,7 @@
 		display: flex;
 		@include media("xl"){
 		 margin-left: 31px;
-	 }
+	     }
 	 @include media("xxl"){
 		 margin-left: 20px;
 		 margin-right: 20px;
@@ -118,6 +118,21 @@
 	 &__input{
 		display: none;
 	}
+	&__input:checked~.nav{
+		@media screen and (max-width: calc(#{$xl} - 1px)){
+			display: none;
+		}
+		@include media("xl"){
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&__input:checked~.header__button-newNav{
+		@include media("xl"){
+			display: block;
+		}
+	}
 	&__input:checked~.header-nav{
 		display: flex;
 		flex-direction: column;
@@ -130,20 +145,25 @@
 		z-index: 5;
 		padding-top: 25px;
 		@include media("lg"){
-			width: 50%;
+			width: 55%;
+		}
+		@include media("xl"){
+			display: none;
 		}
 	}
 	@include media("lg"){
-		&__input:checked~.header-nav::before{
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			z-index: 8;
-			top: 0%;
-			left: 100%;
-			background-color: getColor('burger-menu-color');
-			opacity: 0.8;
+		@media screen and (max-width: calc(#{$xl} - 1px)){
+			&__input:checked~.header-nav::before{
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 8;
+				top: 0%;
+				left: 100%;
+				background-color: getColor('burger-menu-color');
+				opacity: 0.8;
+			}
 		}
 	}
 	@media screen and (max-width: calc(#{$md} - 1px)) {
@@ -250,6 +270,9 @@
 			padding: 16px 65px;
 			margin-right: 510px;
 		}
+		@include media("xl"){
+			display: none;
+		}
 	}
 	 &__button{
 		display: none;
@@ -276,5 +299,26 @@
 	&__button:hover{
 		background-color:getColor('primary');
 		color:getColor('pricing-btn')
+	}
+	&__button-newNav{
+		display: none;
+		transition: background-color 0.5s ease;
+		border: 2px solid getColor('primary');
+		border-radius: 5px;
+		background-color: transparent;
+		padding: 11px 40px;
+		margin-left: 100px;
+		font-family: getFont('poppins');
+		font-weight: 400;
+		font-size: 18px;  
+		white-space: nowrap;
+
+		@include media("xxl"){
+			font-size: 24px;
+            padding: 17px 50px;
+            margin-left: 240px;
+		}
+
+
 	}
 }
