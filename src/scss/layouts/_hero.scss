@@ -256,7 +256,7 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
-      z-index: 2;
+      z-index: 5;
 
         .backdrop .is-hidden .modal {
           opacity: 0;
@@ -309,6 +309,8 @@
     margin-top: 18px;
     margin-bottom: 8px;
 }
+
+
 .input-text{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -324,6 +326,8 @@
         outline: 1px red solid;
       }
 }
+
+
 .forms{
     display: flex;
     flex-direction: column;
@@ -331,7 +335,21 @@
 }
 .div-form{
     position: relative;
+
+    @media screen and (min-width: getBreakPoint('sm')) {
+        max-width: 230px;
+    }
+    @media screen and (min-width: getBreakPoint('md')) {
+        max-width: 408px;
+    }
 }
+
+input{
+    @media screen and (min-width: getBreakPoint('sm')) {
+        max-width: 100%;
+    }
+}
+
 .div-form:not(:last-child){
     margin-bottom: 10px;
 }
@@ -372,7 +390,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-bottom: 40px;
+      margin-bottom: 40px !important;
       width: 407px;
   }
   .checkbox-gender{
@@ -442,6 +460,13 @@
   font-size: 24px;
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
+
+  @media screen and (min-width: getBreakPoint('sm')) {
+    max-width: 100px;
+  }
+  @media screen and (min-width: getBreakPoint('md')) {
+    max-width: 201px;
+  }
 }
 .gender-option.selected {
   background-color: #333;
@@ -450,4 +475,9 @@
 }
 .gender-option input[type="radio"] {
   display: none;
+}
+.sm-modal{
+    @media screen and (min-width: getBreakPoint('md')) {
+      display: none;
+    }
 }
