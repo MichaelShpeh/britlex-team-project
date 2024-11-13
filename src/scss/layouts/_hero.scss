@@ -22,7 +22,6 @@
     .container {
         @media screen and (min-width: getBreakPoint('lg')) {
             height: 413px;
-            display: flex;
             position: relative;
         }
 
@@ -47,7 +46,6 @@
         @media screen and (min-width: getBreakPoint('md')) {
             width: 424px;
             height: 424px;
-            margin-bottom: 16px;
             background-image: url(../images/hero-md.svg);
         }
 
@@ -63,7 +61,6 @@
         @include media('xl') {
             width: 460px;
             height: 460px;
-            top: 0px;
             right: 21px;
             background-image: url(../images/hero-xl.svg);
         }
@@ -81,7 +78,7 @@
         font-family: 'Poppins';
         font-weight: 600;
         font-size: 24px;
-        line-height: 150%;
+        line-height: 1.5;
         text-align: center;
         color: #000;
         margin: 0 auto;
@@ -91,7 +88,7 @@
             width: 491px;
             height: 45px;
             font-size: 34px;
-            line-height: 132%;
+            line-height: 1.32;
             margin-bottom: 25px;
         }
 
@@ -99,7 +96,7 @@
             width: 217px;
             height: 135px;
             font-size: 36px;
-            line-height: 125%;
+            line-height: 1.25;
             text-align: left;
             position: absolute;
             top: 28px;
@@ -110,7 +107,7 @@
             width: 290px;
             height: 192px;
             font-size: 48px;
-            line-height: 133%;
+            line-height: 1.33;
             top: 13px;
             left: 29px;
         }
@@ -121,7 +118,7 @@
             top: 50px;
             left: 130px;
             font-size: 64px;
-            line-height: 125%;
+            line-height: 1.25;
         }
     }
 
