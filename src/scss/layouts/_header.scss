@@ -7,7 +7,7 @@
 	}
 	@include media("lg"){
 	 padding-top: 39px;
-	 padding-bottom: 68px;
+	 padding-bottom: 40px;
 	}
 	@include media("xl"){
 	 padding-top: 25px;
@@ -70,6 +70,7 @@
 	 &__label{
 		order: 2;
 		margin-right: 15px;
+		cursor: pointer;
 		@include media("md"){
 			 margin-left: 362px;
 			 margin-right: 0px;
